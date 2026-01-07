@@ -1,0 +1,34 @@
+//Import dei bottoni
+import HomeButtons from '../components/HomeButtons';
+
+//Import dei componenti
+import Footer from '../components/Footer';
+
+//Import dell'immagine di profilo
+import profilePicture from './assets/images/home-img/Foto-Portfolio02_2024.png';
+
+//Creo la funzione Home che conterrà tutto il contenuto della pagina
+function Home () {
+    //La funzione "ritorna":
+    return (
+        <>
+        { /*la sezione bio in cui sta l'immagine profilo il titolo e il paragrafo */ }
+        <section className="Portfolio-bio">
+            <h1 className="bio-title">
+                I'm Nicola
+            </h1>
+            <img className="profile-picture" src={profilePicture} alt="Nicola's picture black & white"/>
+            <p>I am a motivated and detail-oriented developer with a strong background in Digital Graphic Design and a foundation in psychology.</p>
+            <p>After completing my Master’s degree in Digital Graphic Design in 2024, I further strengthened my expertise in the digital field by pursuing an additional Master’s degree in Full Stack Development.</p>
+            <p>I develop today thinking about tomorrow's scalability and maintainability, with a keen eye on sustainability and User Experience.</p>
+        </section>
+
+        {/*Qui in fondo inserisco il componente dei bottoni della home ed il Footer */}
+        <HomeButtons/>
+        <Footer />
+        </>
+    )
+}
+
+
+export default Home;
