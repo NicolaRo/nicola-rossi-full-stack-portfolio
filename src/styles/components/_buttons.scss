@@ -1,0 +1,28 @@
+.cv-button{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: $color-text;
+color:$button-text;
+margin: $space-lg;
+}
+
+.button-cv-icon {
+width: 5rem;
+height: auto;
+background-color: $color-text;
+}
+
+.contact-button{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: $color-text;
+color:$button-text;
+}
+.button-contact-icon{
+width: 5rem;
+height: auto;
+background-color: $color-text;
+}
+

@@ -12,13 +12,13 @@ function HomeButtons () {
     const navigate = useNavigate();
     return (
         <div>
-            <button className='CV-button' onClick={()=> navigate ("/cv")}>
-                <img className='CV-icon' src={cvLogo} alt="Developer icon"/>
+            <button className='cv-button' onClick={()=> navigate ("/cv")}>
+                <img className='button-cv-icon' src={cvLogo} alt="Developer icon"/>
                 My Developer Portfolio
             </button>
 
-            <button className='Contact-button' onClick={()=>navigate ("/contact")}>
-                <img className='Contact-icon' src={contactLogo} alt="Contact icon"/>
+            <button className='contact-button' onClick={()=>navigate ("/contact")}>
+                <img className='button-contact-icon' src={contactLogo} alt="Contact icon"/>
                 Contact Me
             </button>
         </div>

@@ -13,7 +13,7 @@ import CV from './pages/CV.jsx';
 import Contact from './pages/Contact.jsx';
 
 //Import dello stile da applicare all'intero portfolio
-import "./styles/main.scss";
+import './styles/main.scss';
 
 //Avvio l'app ed imposto il routing per la navigazione tra le pagine in SPA
 function App() {

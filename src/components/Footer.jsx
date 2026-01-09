@@ -10,10 +10,11 @@ import {Link} from 'react-router-dom';
 function Footer () {
     return (
         <>
+        <div className="footer">
         <div className="footer-links">
         <Link to="/">Home</Link>
-        <Link to="/CV">CV</Link>
-        <Link to="/Contact-Me">Contact Me</Link>
+        <Link to="/cv">CV</Link>
+        <Link to="/contact">Contact Me</Link>
       </div>
         <div className="footer-icon-container">
         
@@ -35,6 +36,7 @@ function Footer () {
             
         </div>
         <p className="footer-text">Designed and developed by Rossi Nicola® </p>
+        </div>
         </>
     )
 }
