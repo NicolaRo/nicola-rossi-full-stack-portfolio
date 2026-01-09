@@ -1,1 +1,0 @@
-import {hero, logo} from '../assets/images'

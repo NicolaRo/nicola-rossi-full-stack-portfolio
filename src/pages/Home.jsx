@@ -5,7 +5,7 @@ import HomeButtons from '../components/HomeButtons';
 import Footer from '../components/Footer';
 
 //Import dell'immagine di profilo
-import profilePicture from './assets/images/home-img/Foto-Portfolio02_2024.png';
+import profilePicture from '../assets/images/home-img/Foto-Portfolio02_2024.png';
 
 //Creo la funzione Home che conterrà tutto il contenuto della pagina
 function Home () {

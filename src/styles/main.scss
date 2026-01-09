@@ -1,0 +1,8 @@
+//Importo i files di stile di base
+@import './base/global';
+@import './base/mixins';
+@import './base/variables';
+
+//Importo i files di stile dei componenti
+@import './components/footer';
+@import './components/navbar';
