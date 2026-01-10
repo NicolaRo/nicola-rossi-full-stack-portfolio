@@ -8,12 +8,18 @@ align-items: center;
 background-color: $color-text;
 color:$button-text;
 margin-right: $space-lg;
+&:hover {
+    background-color: $button-hover;
+    color:$color-text;
+    box-shadow:$box-shadow-red;
+    border: $border-hover;
+}
 }
 
 .button-cv-icon {
 width: 5rem;
 height: auto;
-background-color: $color-text;
+background-color: transparent;
 }
 
 .contact-button{
@@ -24,10 +30,16 @@ background-color: $color-text;
 color:$button-text;
 height: fit-content;
 margin-left:$space-lg;
+&:hover {
+    background-color: $button-hover;
+    color:$color-text;
+    box-shadow:$box-shadow-red;
+    border: $border-hover;
+}
 }
 .button-contact-icon{
 width: 5rem;
 height: auto;
-background-color: $color-text;
+background-color: transparent;
 }
 
