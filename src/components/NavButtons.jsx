@@ -4,69 +4,82 @@ import { useNavigate } from "react-router-dom";
 // Importo useState per gestire gli stati
 import { useState } from "react";
 
-function NavButtons() {
+function NavButtons({closeMenu}) {
+  
   const navigate = useNavigate();
-
-  // Stato burger menu (mobile)
-  const [burgerOpen, setBurgerOpen] = useState(false);
 
   // Stato dropdown progetti (desktop)
   const [showProjects, setShowProjects] = useState(false);
 
-  // Toggle burger menu
-  const toggleBurger = () => {
-    setBurgerOpen((prev) => !prev);
+  //Funzione per navigare alla pagina progetto e richiudere il menu 
+  const handleNavigate = (path) => {
+    navigate(path);
+    closeMenu();
   };
-
   return (
-    <nav className="navbar-container">
-      {/* Burger menu (visibile solo su mobile via CSS) */}
-      <button
-        className="burger-icon"
-        onClick={toggleBurger}
-        aria-label="Toggle menu"
-      />
+    <ul className="menu-list">
+      
+      {/* BIO */}
+      <li>
+        <button onClick={() => handleNavigate("/")}>
+          I'm Nicola
+        </button>
+      </li>
 
-      {/* Menu principale */}
-      <ul className={`menu ${burgerOpen ? "open" : ""}`}>
-        {/* BIO */}
-        <li>
-          <button onClick={() => navigate("/")}>
-            I'm Nicola
-          </button>
-        </li>
+      {/* CV + DROPDOWN */}
+      <li
+        className="has-dropdown"
+        onMouseEnter={() => setShowProjects(true)}
+        onMouseLeave={() => setShowProjects(false)}
+      >
+        <button onClick={() => handleNavigate("/cv")}>
+          My Developer CV
+        </button>
 
-        {/* CV + DROPDOWN */}
-        <li
-          className="has-dropdown"
-          onMouseEnter={() => setShowProjects(true)}
-          onMouseLeave={() => setShowProjects(false)}
-        >
-          <button onClick={() => navigate("/cv")}>
-            My Developer CV
-          </button>
+        {showProjects && (
+          <ul className="dropdown">
+            <li>
+              <button onClick={() => handleNavigate("/depyl")}>
+                Depyl
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigate("/greenEarth")}>
+                GreenEarth
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigate("/ecoAware")}>
+                EcoAware
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigate("/theCounterTop")}>
+                The Counter Top
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigate("/owly")}>
+                Owly
+              </button>
+            </li>
+            <li>
+              <button onClick={() => handleNavigate("/veggieBook")}>
+                VeggieBook
+              </button>
+            </li>
+          </ul>
+        )}
+      </li>
 
-          {/* Dropdown progetti (desktop hover) */}
-          {showProjects && (
-            <ul className="dropdown">
-              <li><button onClick={() => navigate("/depyl")}>Depyl</button></li>
-              <li><button onClick={() => navigate("/greenEarth")}>GreenEarth</button></li>
-              <li><button onClick={() => navigate("/ecoAware")}>EcoAware</button></li>
-              <li><button onClick={() => navigate("/theCounterTop")}>The Counter Top</button></li>
-              <li><button onClick={() => navigate("/owly")}>Owly</button></li>
-              <li><button onClick={() => navigate("/veggieBook")}>VeggieBook</button></li>
-            </ul>
-          )}
-        </li>
+      {/* CONTACT */}
+      <li>
+        <button onClick={() => handleNavigate("/contact")}>
+          Contact Me
+        </button>
+      </li>
 
-        {/* CONTACT */}
-        <li>
-          <button onClick={() => navigate("/contact")}>
-            Contact Me
-          </button>
-        </li>
-      </ul>
-    </nav>
+    </ul>
   );
 }
 

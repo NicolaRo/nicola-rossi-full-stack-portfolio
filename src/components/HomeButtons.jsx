@@ -11,7 +11,7 @@ function HomeButtons () {
     //useNavigate restituisce la funzione per spostarsi tra le pagine
     const navigate = useNavigate();
     return (
-        <div>
+        <div className="home-buttons-container">
             <button className='cv-button' onClick={()=> navigate ("/cv")}>
                 <img className='button-cv-icon' src={cvLogo} alt="Developer icon"/>
                 My Developer Portfolio

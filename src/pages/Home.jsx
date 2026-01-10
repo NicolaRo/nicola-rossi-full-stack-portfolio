@@ -3,10 +3,11 @@ import HomeButtons from '../components/HomeButtons';
 
 //Import dei componenti
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 //Import dell'immagine di profilo
 import profilePicture from '../assets/images/home-img/Foto-Portfolio02_2024.png';
-import Navbar from '../components/Navbar';
+
 
 //Creo la funzione Home che conterrà tutto il contenuto della pagina
 function Home () {
@@ -15,7 +16,7 @@ function Home () {
         <>
         <Navbar/>
         { /*la sezione bio in cui sta l'immagine profilo il titolo e il paragrafo */ }
-        <section className="Portfolio-bio">
+        <section className="portfolio-bio">
             <h1 className="bio-title">
                 I'm Nicola
             </h1>

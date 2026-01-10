@@ -1,10 +1,13 @@
+@import '../base/variables';
+@import '../base/mixins';
+
 .cv-button{
 display: flex;
 flex-direction: column;
 align-items: center;
 background-color: $color-text;
 color:$button-text;
-margin: $space-lg;
+margin-right: $space-lg;
 }
 
 .button-cv-icon {
@@ -19,6 +22,8 @@ flex-direction: column;
 align-items: center;
 background-color: $color-text;
 color:$button-text;
+height: fit-content;
+margin-left:$space-lg;
 }
 .button-contact-icon{
 width: 5rem;
