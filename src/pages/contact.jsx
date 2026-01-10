@@ -1,13 +1,15 @@
-import '../components/Navbar';
-import '../components/Footer';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Contact() {
     return (
+      <>
+      <Navbar/>
       <div>
         <h1>Pagina Contact</h1>
-        <Navbar />
-        
       </div>
+      <Footer/>
+      </>
     );
   }
   

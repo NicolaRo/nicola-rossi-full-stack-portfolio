@@ -16,7 +16,7 @@ function Footer () {
                 <Link to="/contact">Contact Me</Link>
             </div>
             <div className="footer-social-icon">
-                <a 
+                <a className="footer-a-social"
                     href="https://github.com/NicolaRo" 
                     target="_blank" 
                     rel="noopener noreferrer">
@@ -27,7 +27,7 @@ function Footer () {
                         />
                 </a>
 
-                <a 
+                <a className="footer-a-social"
                     href="https://www.linkedin.com/in/nicola-rossi-3365a768/"
                     target="_blank" 
                     rel="noopener noreferrer"

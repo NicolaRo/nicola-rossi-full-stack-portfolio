@@ -56,16 +56,17 @@ a {
     color:$color-text;
     text-decoration: none;
     border-radius: 5px;
+    background-color: $button-hover;
   }
 }
-.footer-social-icons{
+.footer-social-icon{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: $space-md;
   margin: 1rem 0;
   padding: 0;
-  background-color:transparent;
+  background-color:white;
 }
 
 .social-icon{
