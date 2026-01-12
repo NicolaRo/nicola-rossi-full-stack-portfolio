@@ -24,11 +24,13 @@
 }
 
 ul {
-    margin:0;
-    padding:0;
-    list-style:none; //Rimuove i bullet points
-    overflow:hidden;
-    background-color: $color-text;
+    margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
 }
 
 li{
@@ -67,8 +69,8 @@ ul button:hover {
     
 }
 
-.menu .menu-open{
-    height: 500px !important; //Quando il menu è aperto ottiene altezza fissa
+.menu.menu-open{
+    max-height: 500px !important; //Quando il menu è aperto ottiene altezza fissa
 }
 
 // =========================================================
@@ -159,11 +161,12 @@ ul button:hover {
 
 .has-dropdown {
     position: relative;
+    
     .dropdown{
-        position:absolute;
+        position:relative;
+        overflow-y: scroll;
         top:100%;
         left: 0;
-        background-color:#292929;
         box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         padding:0;
         margin:0;
@@ -171,6 +174,7 @@ ul button:hover {
         min-width: 200px; //Per evitare che il testo fuoriesca
         border-radius: 5px;
         z-index:200;
+        
 
         li{
             float: none; //Rimuove il float su .header li

@@ -41,23 +41,23 @@ function Navbar () {
                 onClick={() => navigate ('/')}
             />
 
-            {/*HAMBURGER ICON (solo mobile) */}
-            <label
-                htmlFor="menu-btn"
-                className="menu-icon"
-                onClick={toggleMenu}
-            >
-                {/*La classe 'active' viene aggiunta quando isMenuOpen è true ed attiva l'animazione in X da CSS */}
-                <span className={`nav-icon ${isMenuOpen ? 'active' : ''}`}></span>
-            </label>
+           {/*HAMBURGER ICON (solo mobile) */}
+<label
+  htmlFor="menu-btn"
+  className="menu-icon"
+  onClick={toggleMenu}
+>
+  {/* FIX: aggiungi { prima del backtick */}
+  <span className={`nav-icon ${isMenuOpen ? 'active' : ''}`}></span>
+</label>
 
-            {/*MENU NAVIGATION */}
-            <nav className ={`menu ${isMenuOpen ? 'menu-open': ''}`}>
-                {/* Inserisco qua il componente NavButton che include il routing per la navigazione oltre agli states che attivano le caratteristiche del componente*/ }
-                <NavButtons
-                isMenuOpen={isMenuOpen}
-                closeMenu={closeMenu}/>
-            </nav>
+{/*MENU NAVIGATION */}
+<nav className={`menu ${isMenuOpen ? 'menu-open': ''}`}>
+  <NavButtons
+    isMenuOpen={isMenuOpen}
+    closeMenu={closeMenu}
+  />
+</nav>
         </header>
     );
 }

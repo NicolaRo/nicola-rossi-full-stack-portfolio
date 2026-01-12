@@ -1,24 +1,27 @@
-// Importo useNavigate per la navigazione
 import { useNavigate } from "react-router-dom";
-
-// Importo useState per gestire gli stati
 import { useState } from "react";
 
 function NavButtons({closeMenu}) {
-  
   const navigate = useNavigate();
-
-  // Stato dropdown progetti (desktop)
+  
+  // Stato dropdown progetti
   const [showProjects, setShowProjects] = useState(false);
-
-  //Funzione per navigare alla pagina progetto e richiudere il menu 
+  
+  // Funzione per navigare e chiudere menu
   const handleNavigate = (path) => {
     navigate(path);
     closeMenu();
+    setShowProjects(false); // Chiudi anche il dropdown
   };
+  
+  // Toggle dropdown progetti (per mobile)
+  const toggleProjects = (e) => {
+    e.stopPropagation(); // Previene la navigazione immediata
+    setShowProjects(!showProjects);
+  };
+
   return (
     <ul className="menu-list">
-      
       {/* BIO */}
       <li>
         <button onClick={() => handleNavigate("/")}>
@@ -32,8 +35,22 @@ function NavButtons({closeMenu}) {
         onMouseEnter={() => setShowProjects(true)}
         onMouseLeave={() => setShowProjects(false)}
       >
-        <button onClick={() => handleNavigate("/cv")}>
+        {/* Su mobile: click per toggle dropdown, su desktop: naviga */}
+        <button 
+          onClick={(e) => {
+            // Se il dropdown è chiuso, aprilo invece di navigare
+            if (window.innerWidth < 768 && !showProjects) {
+              toggleProjects(e);
+            } else {
+              handleNavigate("/cv");
+            }
+          }}
+        >
           My Developer CV
+          {/* Indicatore visivo per mobile */}
+          <span style={{ marginLeft: '8px' }}>
+            {showProjects ? '▲' : '▼'}
+          </span>
         </button>
 
         {showProjects && (
@@ -78,7 +95,6 @@ function NavButtons({closeMenu}) {
           Contact Me
         </button>
       </li>
-
     </ul>
   );
 }
