@@ -3,10 +3,15 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 //Importo le immagini
-import nicolaCoding from '../assets/images/CV-img/Nicola-coding.png';
+/* import nicolaCoding from '../assets/images/CV-img/Nicola-coding.png';
 import codeBackground from '../assets/images/CV-img/code-background.png';
 import macBookAirMockup from '../assets/images/CV-img/MacBook-air-S2I-Mockup.gif';
-import s2IextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp';
+import s2IextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp'; */
+
+const nicolaCoding = "/images/CV-img/Nicola-coding.png";
+const codeBackground = "/images/CV-img/code-background.png";
+const macBookAirMockup ="/images-CV-img/MacBook-air-S2I-Mockup.gif";
+const s2IextendedLogo ="/images/CV-img/Logo_Start2Impact.webp";
 
 function Contact() {
     return (
