@@ -59,13 +59,11 @@ function Contact() {
             <div className="submit-btn-container">
               <button type="submit">Send message</button>
             </div>
-            <p>Or for a quicker response...</p>
+            
           </form>
+          <p>Or for a quicker response...</p>
         </div> 
-        
-      </div>
-      
-      <div className="whatsapp-btn-container">
+        <div className="whatsapp-btn-container">
         <a className="whatsapp-btn"
           href="https://wa.me/393459778518" 
           target="_blank"
@@ -80,6 +78,9 @@ function Contact() {
           />
         </a>
       </div>
+      </div>
+      
+      
       
       <Footer/>
     </>
