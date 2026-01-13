@@ -3,3 +3,316 @@
     height: auto;
     margin: 2%;
 }
+.hero-img-container{
+    background-color: rgba(169, 21, 21, 0.519);
+  background-image: url("/src/assets/images/CV-img/code-background.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(5px), brightness(0.8), contrast(1.2);
+  backdrop-filter: blur(5px), brightness(0.8), contrast(1.2);
+  padding: 1%;
+  margin: 1%;
+  border-radius: 5px;
+}
+.nicola-coding-img{
+    width: 25%;
+    height: auto;
+    box-shadow: rgba(109, 0, 0, 0.684) 1 0 0;
+    margin: 1%;
+    padding: 2px;
+    border-radius: 500px;
+    border: solid 5px #6d0000;
+}
+
+.CV-hero-container {
+    padding: 1%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .wrap-education-hero {
+    width: 100%;
+    height: auto;
+    margin-top: 200%;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    justify-content: flex-start;
+    text-align: left;
+    transition: transform 0.5s;
+    color:#a7a8a7;
+    font-size:30px;
+  }
+  
+  
+  .CV-Page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 1%;
+    text-align: left;
+  }
+  .CV-hero-master {
+    background-color: rgba(132, 134, 135, 0.467);
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 5px;
+  }
+  
+  @media screen and (min-width: 650px) {
+    .CV-hero-master {
+      display: block;
+      height: fit-content;
+      margin: 1%;
+      padding: 1%;
+      position: relative;
+      justify-content: left;
+      text-align: left;
+      transition: transform 0.5s;
+    }
+  }
+  .logo-s2i-extended {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+    position: relative;
+    width: 15rem;
+    height: auto;
+    margin:1rem;
+  }
+.macbook-mockup{
+    width: 100%;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.Master-description {
+display: flex;
+flex-direction: column;
+justify-content: left;
+position: relative;
+width: fit-content;
+height: auto; 
+}
+
+  .start2Impact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+    margin: 0.5rem;
+    min-width: fit-content;
+    
+  }
+  @media screen and (min-width: 650px) {
+    .start2Impact-container {
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      height: fit-content;
+      margin: 1%;
+      padding:1%;
+    }
+  }
+  .institute-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: fit-content;
+    height: auto;
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 650px) {
+    .institute-title {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      margin: 1%;
+      padding: 1%;
+      position: relative;
+      justify-content: center;
+      text-align: left;
+      transition: transform 0.5s;
+    }
+  }
+  
+.skill-list-title{
+text-align: center;
+}
+.skill-list{
+    margin: 1rem;
+  padding: 1rem;
+  list-style: none;
+  overflow: scroll;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  }
+  .tools-section{
+    display:flex;
+    flex-direction: row;
+  }
+.Skills-container-1 .skills-container-2 {
+/* padding: 1rem; */
+display: flex;
+flex-direction: column;
+justify-content: left;
+align-items: flex-start;
+position: relative;
+height: fit-content;
+width: 50%;
+}
+
+  
+.skills-bars-container {
+display: flex;
+flex-direction: row;
+justify-content: left;
+position: relative;
+width: 95%;
+height: auto;
+margin: 1%;
+padding: 1%;
+border-radius: 5px;
+}
+  
+  
+@media screen and (max-width: 400px) {
+.skills-bars-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+    .skills-bars-container {
+      order: 2; 
+    }
+  }
+  .skills-bar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-right: 100px;
+    padding-top:1rem;
+    margin-bottom: 0.5rem;
+  }
+  .Skills_1-2, .Skills_2-2 {
+      background-color: #373c37;
+      padding: 1%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: left;
+      position: relative;
+      margin: 1%;
+      height: fit-content;
+      border-radius: 5px;
+      color:#FFF;
+      width:95%;
+  }
+  @media screen and (min-width: 650px) {
+    .Skills_1-2, .Skills_2-2 {
+      flex-direction: column;  
+      width:100%;
+      height: auto;
+      margin: 1%;
+      padding: 1%;
+      position: relative;
+      justify-content: center;
+      text-align: left;
+      transition: transform 0.5s;
+    }
+    
+  }
+  
+  .Skills_2-2 {
+      order: 1;
+    }
+    
+  
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .bar{
+    background-color: #02525bc1;
+    width: 100%;
+    padding: 3px;
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #f3565b;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 4s 2s;
+    -webkit-animation: load 4s 2s;
+    -moz-animation: load 4s 2s;
+    -o-animation: load 4s 2s;
+  }
+  
+  .bar.beginner::before{
+    background-color: #ffcc33;
+  }
+  .bar.intermediate::before{
+    background-color: #a6cfe3;
+  }
+  .bar.advanced::before{
+    background-color: #a6e3a8;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(95% - 10px);
+  
+  }

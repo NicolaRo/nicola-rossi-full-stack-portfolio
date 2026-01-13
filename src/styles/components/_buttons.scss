@@ -1,6 +1,7 @@
 @import '../base/variables';
 @import '../base/mixins';
 
+// GLOBAL
 button {
 border-radius: 8px;
 padding: 0.6em 1.2em;
@@ -9,6 +10,8 @@ cursor: pointer;
 transition: border-color 0.25s;
 }
 
+
+// HOME
 .cv-button{
 display: flex;
 flex-direction: column;
@@ -52,6 +55,7 @@ height: auto;
 background-color: transparent;
 }
 
+// CONTACT
 
 .submit-btn{
 border: solid 2px rgba(255, 0, 0, 0.464);
@@ -62,6 +66,7 @@ border: solid 2px rgba(255, 0, 0, 0.464);
 .whatsapp-btn-container{
     min-height: fit-content;
     width:fit-content;
+    background-color: transparent;
 }
 .whatsapp-btn{
 min-height: fit-content;
@@ -81,3 +86,20 @@ min-height: fit-content;
     background-color: transparent;
     margin-left:0.3rem;
     }
+
+// CV PAGE
+
+.btn-master{
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 2em;
+    font-weight: bold;
+    color: #a7a8a7;
+    width: fit-content;
+    border: solid 2px red;
+    border-radius: 8px;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    display: flex;
+}

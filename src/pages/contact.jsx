@@ -79,9 +79,6 @@ function Contact() {
         </a>
       </div>
       </div>
-      
-      
-      
       <Footer/>
     </>
   );
