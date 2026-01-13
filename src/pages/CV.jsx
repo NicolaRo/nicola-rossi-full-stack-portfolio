@@ -1,17 +1,13 @@
 //Importo i componenti funzionali
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import CvTools from '../components/CvTools';
 
 //Importo le immagini
-/* import nicolaCoding from '../assets/images/CV-img/Nicola-coding.png';
-import codeBackground from '../assets/images/CV-img/code-background.png';
+import nicolaCoding from '../assets/images/CV-img/Nicola-coding.jpg';
+import codeBackground from '../assets/images/CV-img/code-background.jpg';
 import macBookAirMockup from '../assets/images/CV-img/MacBook-air-S2I-Mockup.gif';
-import s2IextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp'; */
-
-const nicolaCoding = "/images/CV-img/Nicola-coding.png";
-const codeBackground = "/images/CV-img/code-background.png";
-const macBookAirMockup ="/images-CV-img/MacBook-air-S2I-Mockup.gif";
-const s2IextendedLogo ="/images/CV-img/Logo_Start2Impact.webp";
+import s2IextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp';
 
 function Contact() {
     return (
@@ -57,6 +53,7 @@ function Contact() {
           <a class="btn-master" href="https://start2impact.pro.typeform.com/to/xuE0ijXb?typeform-source=www.start2impact.it#brochure=full-stack&source=sito-web" target="_blank">Go to Master's page</a>   
         </section>
       </div>
+      <CvTools/>
       <Footer />
       </>
     );

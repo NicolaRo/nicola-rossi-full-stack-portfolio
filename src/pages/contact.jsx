@@ -1,16 +1,88 @@
+//Importo le immagini
+import ContactPicture from "../assets/images/Contact-Me-img/Get-in-touch.png";
+import WhatsappLogo from "../assets/images/Contact-Me-img/whatsapp.png";
+//Importo i componenti
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 function Contact() {
-    return (
-      <>
+  return (
+    <>
       <Navbar/>
       <div>
         <h1>Pagina Contact</h1>
+        <h1>Contact Me</h1>
+        <img 
+          className="contact-me-hero-img"
+          src={ContactPicture} 
+          alt="Illustration account is using the contact form"
+        />
       </div>
+      
+      <div className="container-form">
+        <div className="form-text">
+          <p>Fill out the form below to send me a message. I will get back to you as soon as possible.</p>
+          <form id="contact-form">
+            <div className="field">
+              <label htmlFor="name">Name</label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                minLength="2" 
+                placeholder="Your name"
+              />
+            </div>
+            
+            <div className="field">
+              <label htmlFor="email">Email</label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                placeholder="you@example.com"
+              />
+            </div>
+            
+            <div className="field">
+              <label htmlFor="message">Message</label>
+              <textarea 
+                name="message" 
+                id="message" 
+                required 
+                minLength="10" 
+                placeholder="Write your message..."
+              ></textarea>
+            </div>
+            
+            <div className="sumbit-btn">
+              <button type="submit">Send message</button>
+            </div>
+          </form>
+        </div> 
+      </div>
+      
+      <div className="whatsapp-button">
+        <a 
+          href="https://wa.me/393459778518" 
+          target="_blank"
+          rel="noopener noreferrer"
+        > 
+          Start a chat with me 
+          <img 
+            className="logo-whatsapp" 
+            src={WhatsappLogo} 
+            alt="WhatsApp logo"
+            style={{ height: '24px', textDecoration: 'none' }}
+          />
+        </a>
+      </div>
+      
       <Footer/>
-      </>
-    );
-  }
-  
-  export default Contact;
+    </>
+  );
+}
+
+export default Contact;

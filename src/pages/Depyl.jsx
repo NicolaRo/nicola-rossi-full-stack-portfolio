@@ -1,7 +1,7 @@
 //Importo i componenti
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import GitHubLogo from '../assets/images/footer-img/Github-Logo-Black.png';
 //Importo le immagini
 import depylLogo from '../assets/images/Projects-img/Depyl_Logo_Clear.png';
 import depylPreview from '../assets/images/Projects-img/Depyl-macbook-preview.gif';
@@ -24,9 +24,25 @@ function Depyl () {
             <li>🎯 Mission Statement: Write a concise, impactful sentence that captures the company’s mission and vision.</li>
             <li>🧩 Background Aligned with Brand Values: Choose a background that visually reflects the company's identity and values</li>
           </ul>
-          <img className="depyl-preview" src={depylPreview} alt="Macbook displaying Depyl landing page" />
+          <img
+            className="depyl-preview"
+            src={depylPreview}
+            alt="Macbook displaying Depyl landing page"
+          />
         </div>
-
+        <div className="github-bt-container">
+            <a
+              className="github-project-button"
+              href="https://github.com/NicolaRo/depyl" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              <img 
+                className="social-icon" 
+                src={GitHubLogo}
+                alt="GitHub Logo black"
+              />
+            </a>
+          </div>
         <Footer />
         </>
         
