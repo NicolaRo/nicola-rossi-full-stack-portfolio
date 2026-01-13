@@ -1,0 +1,116 @@
+@use "../base/variables";
+@use "../base/mixins";
+@use "../base/global";
+@use "../components/buttons";
+
+.contact-page{
+    margin-top: 5rem;
+}
+.contact-form{
+    background-color: transparent;
+}
+p{
+    background-color: transparent;
+}
+
+.field{
+    background-color:#3c3b3b;
+}
+.contact-me-hero-img{
+    width: 70%;
+    display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-form {
+display: flex;
+text-align: left;
+flex-direction: row;
+padding: 1%;
+background-color: #68666661;
+border-radius: 8px;
+/* box-shadow: $box-shadow-red; */
+margin: 5%;
+}
+  @media screen and (max-width: 400px) {
+    .wrap-form-container {
+      width: 100%;
+      margin-left: 0;
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #68666661;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  }
+  .form-text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left;
+    align-items: flex-start; */
+    /* padding: 3%; */
+    padding:1rem;
+    border-radius: 8px;
+    /* width: 100%; */
+    width: auto;
+    /* margin-left: 10%; */
+    background-color: transparent;
+  }
+  
+  .field {
+    margin: 1%;
+    padding: 1%;
+  }
+  
+.field label {
+display: block;
+font-size: 15px;
+font-weight: bold;
+color: #868585;
+margin: 0 0 0.5rem;
+padding: 0.5rem;
+text-align: left;
+width: fit-content;
+background-color: transparent;
+}
+  
+.field input {
+display: block;
+min-width: 250px;
+line-height: 1.5;
+font-size: 14px;
+border: solid 2px #60000d;
+border-radius: 8px;
+width: 95%;
+height: 2.5rem;
+padding: 0.25rem;
+}
+
+#message {
+min-width: 95%;
+border-radius: 8px;
+border: solid 2px #60000d;
+padding: 0.25rem;
+}
+
+.submit-btn-container{
+justify-content: flex-end;
+display: flex;
+flex-direction: row;
+margin: 1rem;
+}
+
+input a:hover {
+    background-color: #006022;
+    color: #fff;
+} 

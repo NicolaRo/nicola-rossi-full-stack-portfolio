@@ -9,8 +9,7 @@ function Contact() {
   return (
     <>
       <Navbar/>
-      <div>
-        <h1>Pagina Contact</h1>
+      <div className="contact-page">
         <h1>Contact Me</h1>
         <img 
           className="contact-me-hero-img"
@@ -57,15 +56,17 @@ function Contact() {
               ></textarea>
             </div>
             
-            <div className="sumbit-btn">
+            <div className="submit-btn-container">
               <button type="submit">Send message</button>
             </div>
+            <p>Or for a quicker response...</p>
           </form>
         </div> 
+        
       </div>
       
-      <div className="whatsapp-button">
-        <a 
+      <div className="whatsapp-btn-container">
+        <a className="whatsapp-btn"
           href="https://wa.me/393459778518" 
           target="_blank"
           rel="noopener noreferrer"

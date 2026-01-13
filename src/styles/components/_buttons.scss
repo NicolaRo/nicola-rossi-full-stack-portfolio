@@ -52,3 +52,31 @@ height: auto;
 background-color: transparent;
 }
 
+
+.submit-btn{
+border: solid 2px rgba(255, 0, 0, 0.464);
+&:hover{
+    box-shadow:$box-shadow-red;
+}
+}
+.whatsapp-btn-container{
+    min-height: fit-content;
+}
+.whatsapp-btn{
+min-height: fit-content;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: #842132;
+  display: flex;
+  background-color: $color-text;
+  width:fit-content;
+  align-items: center;
+  border-radius: 8px;
+  border: solid 2px #60000d;
+  font-weight: bold;
+}
+.logo-whatsapp{
+    background-color: transparent;
+    margin-left:0.3rem;
+    }

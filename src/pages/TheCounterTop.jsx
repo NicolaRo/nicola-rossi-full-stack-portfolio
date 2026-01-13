@@ -1,5 +1,5 @@
 //Importo le immagini
-import TheCounterTopPreview from "../assets/images/Projects-img/";
+import TheCounterTopPreview from "../assets/images/Projects-img/TheCounterTop-preview.gif";
 import TheCounterTopLogo from "../assets/images/Projects-img/CounterTop-logo.png";
 import GitHubLogo from '../assets/images/footer-img/Github-Logo-Black.png';
 
