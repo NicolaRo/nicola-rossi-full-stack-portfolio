@@ -1,5 +1,9 @@
+//Importo gli hooks di React
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+
+//Importo il file con i dati progetto
+import projectsData from "../data/projectsData";
 
 function NavButtons({closeMenu}) {
   const navigate = useNavigate();
@@ -55,40 +59,16 @@ function NavButtons({closeMenu}) {
 
         {showProjects && (
           <ul className="dropdown">
-            <li>
-              <button onClick={() => handleNavigate("/depyl")}>
-                Depyl
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavigate("/greenEarth")}>
-                GreenEarth
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavigate("/ecoAware")}>
-                EcoAware
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavigate("/theCounterTop")}>
-                The Counter Top
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavigate("/owly")}>
-                Owly
-              </button>
-            </li>
-            <li>
-              <button onClick={() => handleNavigate("/veggieBook")}>
-                VeggieBook
-              </button>
-            </li>
-          </ul>
+            {projectsData.map((project) => (
+              <li key={project.id}>
+                <button onClick={() => handleNavigate(`/progetto/${project.id}`)}>
+                  {project.title}
+                </button>
+              </li>
+            ))}
+            </ul>
         )}
-      </li>
-
+            </li>
       {/* CONTACT */}
       <li>
         <button onClick={() => handleNavigate("/contact")}>

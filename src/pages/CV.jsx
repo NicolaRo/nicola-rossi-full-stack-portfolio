@@ -2,14 +2,18 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CvTools from '../components/CvTools';
+import ProjectCard from '../components/ProjectCard';
+
+//Importo i dati per le cards e per renderizzare poi le pagine dei progetti
+import projectsData from '../data/projectsData';
 
 //Importo le immagini
 import nicolaCoding from '../assets/images/CV-img/Nicola-coding.jpg';
 import macBookAirMockup from '../assets/images/CV-img/MacBook-air-S2I-Mockup.gif';
 import s2IextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp';
-import ProjectCard from '../components/ProjectCArd';
-
-function Contact() {
+import EngineerCodingGif from '../assets/images/CV-img/Coding-Software-Engineer_GIF.gif';
+function CV() {
+  console.log("projectsData:", projectsData);
     return (
       <>
       <Navbar />
@@ -28,20 +32,20 @@ function Contact() {
             </div>
           </div>
         </section><h1> Full-Stack Development</h1>
-        <section class="CV-hero-master">
+        <section className="CV-hero-master">
           
-          <div class="wrap-master-gif">
-            <div class="start2Impact-container">
-              <h1 class="institute-title">Institute:</h1>
+          <div className="wrap-master-gif">
+            <div className="start2Impact-container">
+              <h1 className="institute-title">Institute:</h1>
               <img 
                 className="logo-s2i-extended" 
                 src={s2IextendedLogo} 
                 alt="logo Start 2 Impact"
               />
             </div>
-            <div class="macbook-mockup">
+            <div className="macbook-mockup">
               <img className="macbook-mockup" src={macBookAirMockup} alt="macbook air displaying Start 2 Impact full stack development course"/>
-            <div class="Masters-description">
+            <div className="Masters-description">
               <h2 className="skill-list-title">Skills I've learned</h2>
               <ul className="skill-list">
                 <li>AI Prompting</li>
@@ -53,15 +57,30 @@ function Contact() {
             </div>
             
           </div>
-          <a class="btn-master" href="https://start2impact.pro.typeform.com/to/xuE0ijXb?typeform-source=www.start2impact.it#brochure=full-stack&source=sito-web" target="_blank">Go to Master's page</a>   
+          <a className="btn-master" href="https://start2impact.pro.typeform.com/to/xuE0ijXb?typeform-source=www.start2impact.it#brochure=full-stack&source=sito-web" target="_blank">Go to Master's page</a>   
         </section>
         <CvTools/>
-        <ProjectCard />
       </div>
-      
+      <div className="card-slider">
+        <h3 className='slider-title'>
+          My Projects
+        </h3>
+        <img className="sliders-picture"
+        src={EngineerCodingGif}
+        alt="animation of an Engineer pretending to code"/>
+        <div className="projects-cards">
+        {projectsData.map((project) => (
+          <ProjectCard
+          key={project.id}
+          project={project}
+          />
+        ))}
+      </div>
+      </div>
+
       <Footer />
       </>
     );
   }
   
-  export default Contact;
+  export default CV;
