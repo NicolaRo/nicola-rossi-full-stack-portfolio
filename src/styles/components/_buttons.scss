@@ -1,5 +1,5 @@
-@import '../base/variables';
-@import '../base/mixins';
+@use '../base/variables';
+@use '../base/mixins';
 
 // GLOBAL
 button {
@@ -16,15 +16,15 @@ transition: border-color 0.25s;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: $color-text;
-color:$button-text;
-margin-right: $space-lg;
+background-color: variables.$color-text;
+color:variables.$button-text;
+margin-right: variables.$space-lg;
 
 &:hover {
-    background-color: $button-hover;
-    color:$color-text;
-    box-shadow:$box-shadow-red;
-    border: $border-hover;
+    background-color: variables.$button-hover;
+    color:variables.$color-text;
+    box-shadow:variables.$box-shadow-red;
+    border: variables.$border-hover;
 }
 }
 
@@ -38,15 +38,15 @@ background-color: transparent;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: $color-text;
-color:$button-text;
+background-color: variables.$color-text;
+color:variables.$button-text;
 height: fit-content;
-margin-left:$space-lg;
+margin-left:variables.$space-lg;
 &:hover {
-    background-color: $button-hover;
-    color:$color-text;
-    box-shadow:$box-shadow-red;
-    border: $border-hover;
+    background-color: variables.$button-hover;
+    color:variables.$color-text;
+    box-shadow:variables.$box-shadow-red;
+    border: variables.$border-hover;
 }
 }
 .button-contact-icon{
@@ -60,7 +60,7 @@ background-color: transparent;
 .submit-btn{
 border: solid 2px rgba(255, 0, 0, 0.464);
 &:hover{
-    box-shadow:$box-shadow-red;
+    box-shadow:variables.$box-shadow-red;
 }
 }
 .whatsapp-btn-container{
@@ -75,7 +75,7 @@ min-height: fit-content;
   background-color: transparent;
   color: #842132;
   display: flex;
-  background-color: $color-text;
+  background-color: variables.$color-text;
   width:fit-content;
   align-items: center;
   border-radius: 8px;

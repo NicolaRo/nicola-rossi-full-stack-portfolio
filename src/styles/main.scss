@@ -1,21 +1,22 @@
+//Importo i files di stile di base
+@use './base/global';
+@use './base/mixins';
+@use './base/variables';
+@use './components/buttons';
+
+//Importo i files di stile dei componenti
+@use './components/footer';
+@use './components/navbar';
+
 //Importo i files di stile delle pagine
 @use './pages/home.scss';
 @use './pages/contact.scss';
 @use './pages/CV.scss';
 
-//Importo i files di stile di base
-@import './base/global';
-@import './base/mixins';
-@import './base/variables';
-@import './components/buttons';
-
-//Importo i files di stile dei componenti
-@import './components/footer';
-@import './components/navbar';
-
 * {
-background-color: $color-background;
-color: $color-text;font-family: 'Montserrat', sans-serif;
+background-color: variables.$color-background;
+color: variables.$color-text;
+font-family: 'Montserrat', sans-serif;
 text-decoration: none;
 list-style: none;
 

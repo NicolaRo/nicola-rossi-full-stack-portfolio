@@ -1,5 +1,5 @@
-@import '../base/variables';
-@import '../base/mixins';
+@use '../base/variables';
+@use '../base/mixins';
 
 .portfolio-bio{
     margin-top:10rem;
@@ -10,21 +10,21 @@
     height: fit-content;
     align-items: center;
 
-    @include respond (md) { // larghezza minima (≥768px)
+    @include mixins.respond (md) { // larghezza minima (≥768px)
         display:flex;
         flex-direction: column;
     }
-    @include respond (lg) {
+    @include mixins.respond (lg) {
 
     }
-    @include respond (xl){
+    @include mixins.respond (xl){
 
     }
 }
 
 .profile-picture {
     width: 10rem;
-    height: 10 rem;
+    height: 10rem;
     margin: 2rem;
 }
 

@@ -65,7 +65,7 @@ const projectsData =[
     },
     {
         id: "comingsoonWhite",
-        title: "Comin Soon",
+        title: "Coming Soon",
         logo: ComingSoonWhiteLogo,
         tags: ["tag1", "tag2", "tag3"],
         category: ["cat.1", "cat.2"],

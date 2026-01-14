@@ -18,11 +18,11 @@ function CV() {
       <>
       <Navbar />
       <div className="cv-page">
-        <section class="wrap-education-hero">
-          <div class="CV-Page-title">
+        <section className="wrap-education-hero">
+          <div className="CV-Page-title">
             <h1>Master degree</h1>
-            <div class= "page-header">
-              <div class="hero-img-container">
+            <div className= "page-header">
+              <div className="hero-img-container">
                 <img 
                   className="nicola-coding-img" 
                   src={nicolaCoding} 
