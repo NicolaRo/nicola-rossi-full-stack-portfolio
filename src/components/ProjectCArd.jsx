@@ -16,7 +16,8 @@ function ProjectCard ({project}) {
           </h3>
           <div className="project-card-tags">
             {(project.tags || []).map((tag,index) => (
-              <span key={index} className="card-tag">
+              <span key={index} 
+              className={`project-card__tag project-card__tag--${tag}`}>
                 {tag}
               </span>
             ))}

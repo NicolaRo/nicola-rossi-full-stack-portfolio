@@ -11,6 +11,7 @@ import HomeButtons from './components/HomeButtons.jsx';
 import Home from './pages/Home.jsx';
 import CV from './pages/CV.jsx';
 import Contact from './pages/Contact.jsx';
+import ProjectDetails from './pages/ProjectDetails.jsx';
 
 //Import dello stile da applicare all'intero portfolio
 import './styles/main.scss';
@@ -22,6 +23,7 @@ function App() {
     <Routes>
       <Route path="/" element ={<Home />} />
       <Route path="/cv" element ={<CV />} />
+      <Route path="/progetto/:id" element ={<ProjectDetails />} />
       <Route path="/contact" element ={<Contact />} />
     </Routes>
   </Router>

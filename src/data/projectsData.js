@@ -1,4 +1,4 @@
-//Importo le immagini:
+//Importo i loghi:
 import DepylLogo from "../assets/images/Projects-img/Depyl_Logo_Clear.png";
 import GreenEarthLogo from "../assets/images/Projects-img/GreenEarth-logo.png";
 import EcoAwareLogo from "../assets/images/Projects-img/EcoAware-logo.png";
@@ -8,6 +8,15 @@ import VeggieBookLogo from "../assets/images/Projects-img/VeggieBook-logo.png";
 import ComingSoonWhiteLogo from "../assets/images/CV-img/Coming-soon-icon_white.png";
 import ComingSoonBlackLogo from "../assets/images/CV-img/Coming-soon-icon_black.png";
 
+
+//Importo le preview dei progetti
+import PreviewDepyl from '../assets/images/Projects-img/Depyl-macbook-preview.gif';
+import PreviewGreenEarth from '../assets/images/Projects-img/GreenEarth-preview.gif';
+import PreviewEcoAware from '../assets/images/Projects-img/EcoAware-preview.gif';
+import PreviewTheCounterTop from '../assets/images/Projects-img/TheCounterTop-preview.gif';
+import PreviewOwly from '../assets/images/Projects-img/Owly-preview.gif';
+import PreviewVeggieBook from '../assets/images/Projects-img/VeggieBook-preview.gif';
+
 const projectsData =[
     {
         id: "depyl",
@@ -15,7 +24,8 @@ const projectsData =[
         logo: DepylLogo,
         tags: ["HTML", "CSS"],
         category: ["frontend","landing page"],
-        description: "Corporate landing page",
+        preview: PreviewDepyl,
+        description: "Corporate landing-page",
         detailDescription:"This project focuses on the design and development of a landing page for a fictional company operating in the water filtration sector. The goal is to translate the company’s identity into a clear, professional, and visually consistent web presence. The landing page highlights the brand through a well-defined company name, a custom logo, and a concise mission statement that communicates the core values and vision of the business. Social media links are included to reflect a realistic brand ecosystem and encourage external engagement. Special attention is given to visual hierarchy, layout clarity, and background styling to ensure alignment with the brand’s positioning. The result is a clean and structured landing page that balances aesthetic appeal with clear communication, following modern web design best practices."
     },
     {
@@ -23,8 +33,9 @@ const projectsData =[
         title: "Green Earth",
         logo: GreenEarthLogo,
         tags: ["HTML", "CSS", "Responsive"],
-        category: ["frontend", "landing page"],
-        description: "Corporate landing page",
+        category: ["frontend", "landing-page"],
+        preview: PreviewGreenEarth,
+        description: "Corporate landing-page",
         detailDescription:"This project involves the design and development of a brand-oriented landing page for GreenEarth, with a strong focus on communicating the company’s values and environmental identity. The website is structured around a clear and well-defined layout, featuring a header with brand logo, a hero section with a visually impactful background image, and a footer containing essential contact information. An 'About Us' section introduces the company and its mission, while a dedicated 'Our Projects' area highlights three key initiatives to reinforce the brand’s commitment and real-world impact. The overall structure prioritizes clarity, visual balance, and coherent information hierarchy, resulting in a professional and accessible landing page aligned with modern web design standards."
     },
     {
@@ -32,7 +43,8 @@ const projectsData =[
         title: "The Counter Top",
         logo: TheCounterTopLogo,
         tags: ["HTML", "CSS", "JavaScript"],
-        category: ["frontend", "mini app"],
+        category: ["frontend", "mini-app"],
+        preview: PreviewTheCounterTop,
         description: "app to count clicks",
         detailDescription:"This project consists of a minimal web application developed as part of the Full Stack Developer program at start2impact University, with the objective of implementing a fully functional digital counter using only vanilla JavaScript. The interface is generated dynamically through JavaScript and initializes with a counter value set to zero. Users can increment or decrement the value via dedicated controls, with updates reflected in real time through direct DOM manipulation. The project deliberately avoids the use of external libraries or frameworks, focusing instead on native JavaScript, event handling, and core DOM APIs. Emphasis is placed on clean code structure, modular logic, and predictable state updates. Despite its simplicity, the application serves as a practical exercise in understanding fundamental JavaScript concepts and building interactive UI behavior from first principles."
     },
@@ -41,7 +53,8 @@ const projectsData =[
         title: "EcoAware",
         logo: EcoAwareLogo,
         tags: ["HTML", "CSS", "JavaScript"],
-        category: ["frontend", "calculating app"],
+        category: ["frontend", "calculating-app"],
+        preview: PreviewEcoAware,
         description: "Co2 calculating app",
         detailDescription:"This project focuses on the development of an educational JavaScript utility commissioned by EcoAware, an environmental non-profit organization, with the objective of increasing awareness around individual carbon footprints. The tool is designed to estimate carbon emissions generated by everyday activities, helping users better understand the environmental impact of their lifestyle choices. The implementation is based on a set of modular and well-structured JavaScript functions, each responsible for a specific emission calculation. The application includes dedicated calculators for household energy consumption and car-based transportation, applying standardized conversion formulas to return CO₂ emissions expressed in kilograms. A final aggregation function combines these values to compute the user’s total estimated carbon footprint. The project emphasizes clean logic, function isolation, and clarity of calculations, resulting in a lightweight and maintainable solution aligned with best practices in JavaScript development."
     },
@@ -49,8 +62,9 @@ const projectsData =[
         id: "owly",
         title: "Owly",
         logo: OwlyLogo,
-        tags: ["JavaScript", "API", "Mobile first"],
-        category: ["frontend", "education app"],
+        tags: ["JavaScript", "API", "Mobile-first"],
+        category: ["frontend", "education-app"],
+        preview: PreviewOwly,
         description: "App to find book details",
         detailDescription:"This project is a lightweight web application that enables users to search and explore books by category through a clean and minimal interface. The application integrates with the Open Library public APIs to retrieve structured book data in real time. Users can select a search criterion, enter a category, and view a list of matching books displaying titles and associated authors. Selecting a book triggers a secondary API request based on the unique work key returned in the initial response, allowing the application to fetch and render additional details, including the full book description. The project focuses on clear data flow, API integration, and a straightforward user experience."
     },
@@ -60,7 +74,8 @@ const projectsData =[
         logo: VeggieBookLogo,
         tags: ["React", "API", "caching"],
         category: ["frontend", "App"],
-        description: "Vegetarian recipe app",
+        preview: PreviewVeggieBook,
+        description: "Vegetarian recipe-app",
         detailDescription:"This project is a web application designed to help users search and explore vegetarian recipes through a clean and intuitive interface. The application integrates with the Spoonacular Food API, using query parameters to ensure that only vegetarian recipes are retrieved. Users can search for recipes via a dedicated input and view essential details such as title and cover image in the search results. Selecting a recipe navigates to a detail page displaying additional information. The project emphasizes maintainable and modular code structure, with a responsive layout optimized for different screen sizes. It leverages React to build a component-based interface, React Router for client-side navigation, Axios for API communication, React Hooks for state and lifecycle management, and Redux or Context API for global state handling. Overall, the application demonstrates best practices in modern frontend development, combining interactivity, API integration, and responsive design in a coherent, scalable solution."
     },
     {
@@ -69,6 +84,7 @@ const projectsData =[
         logo: ComingSoonWhiteLogo,
         tags: ["tag1", "tag2", "tag3"],
         category: ["cat.1", "cat.2"],
+        preview: PreviewDepyl,
         description: "Description",
         detailDescription:"This project is being prepared. Updates will be posted soon, thank you for waiting."
     },
@@ -77,6 +93,7 @@ const projectsData =[
         title: "Coming Soon",
         logo: ComingSoonBlackLogo,
         tags: ["tag1", "tag2", "tag3"],
+        preview:PreviewDepyl,
         category: ["cat.1", "cat.2"],
         description: "Description",
         detailDescription:"This project is being prepared. Updates will be posted soon, thank you for waiting."

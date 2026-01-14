@@ -1,0 +1,94 @@
+// _project-card.scss
+@use '../base/variables' as v;
+
+.card-slider{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    width:100%;
+}
+
+.projects-cards{
+    display:flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: flex-end;
+    overflow-y: scroll;
+}
+// Container della card
+.project-card {
+  border: solid 2px red;
+  background-color: #6d6b6b;
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+  width:15rem;
+}
+
+// Titolo
+.project-card-title {  // ⬅️ Doppio underscore
+  background-color: transparent;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// Logo
+.project-card-logo {  // ⬅️ Doppio underscore
+  width: 10rem;
+  background-color: transparent;
+  padding: v.$space-sm;  // ⬅️ Usa v. non variables.
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+// Container dei tag
+.project-card-tags {  // ⬅️ Doppio underscore
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  justify-content: center;
+}
+
+// Stile base per ogni singolo tag
+.project-card__tag {  // ⬅️ Doppio underscore
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border:v.$border-hover;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
+  color: #fff;
+  background-color: #718096; // Colore di default
+  margin:0.25rem;
+}
+
+// ⬇️⬇️⬇️ LOOP FUORI, NON DENTRO! ⬇️⬇️⬇️
+@each $tag, $color in v.$tag-colors {
+  .project-card__tag--#{$tag} {
+    background-color: $color;
+  }
+}
+
+// Descrizione
+.project-card__description {  // ⬅️ Doppio underscore
+  margin-bottom: 1rem;
+  color: v.$color-text;
+}
+
+// Bottone
+.project-card__button {  // ⬅️ Doppio underscore
+  background-color: v.$button-background;  // ⬅️ v. non variables.
+  color: v.$button-text;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: v.$button-hover;
+  }
+}

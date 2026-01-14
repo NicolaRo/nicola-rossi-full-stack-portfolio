@@ -19,6 +19,19 @@ $color-text: #a7a8a7;
 
 // Palette bottoni
 $button-text: #842132;
+$button-background: #a7a8a7;
 $button-hover: #313030;
 $box-shadow-red: 0 2px 2px 2px rgba(187, 31, 31, 0.4);
-$border-hover: 1px solid rgba(174, 9, 9, 0.82)
+$border-hover: 1px solid rgba(174, 9, 9, 0.82);
+
+//Colori tag
+$tag-colors: (
+  'HTML': #e34c26,
+  'CSS': #1572b6,
+  'JavaScript': #f7df1e,
+  'React': #61dafb,
+  'API': #00d8ff,
+  'Responsive': #38b2ac,
+  'Mobile-first': #805ad5,
+  'caching': #ed8936
+);

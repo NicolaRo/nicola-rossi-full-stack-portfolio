@@ -61,10 +61,11 @@ function CV() {
         </section>
         <CvTools/>
       </div>
-      <div className="card-slider">
-        <h3 className='slider-title'>
+      <h3 className='slider-title'>
           My Projects
         </h3>
+      <div className="card-slider">
+        
         <img className="sliders-picture"
         src={EngineerCodingGif}
         alt="animation of an Engineer pretending to code"/>
