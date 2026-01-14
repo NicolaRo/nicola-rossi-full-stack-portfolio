@@ -7,6 +7,7 @@ import CvTools from '../components/CvTools';
 import nicolaCoding from '../assets/images/CV-img/Nicola-coding.jpg';
 import macBookAirMockup from '../assets/images/CV-img/MacBook-air-S2I-Mockup.gif';
 import s2IextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp';
+import ProjectCard from '../components/ProjectCArd';
 
 function Contact() {
     return (
@@ -18,8 +19,11 @@ function Contact() {
             <h1>Master degree</h1>
             <div class= "page-header">
               <div class="hero-img-container">
-                {/* <img className="hero-img" src={codeBackground} alt="background image showing code"/> */}
-                <img className="nicola-coding-img" src={nicolaCoding} alt="Nicola working at his pc"/>
+                <img 
+                  className="nicola-coding-img" 
+                  src={nicolaCoding} 
+                  alt="Nicola working at his pc"
+                />
               </div>
             </div>
           </div>
@@ -29,7 +33,11 @@ function Contact() {
           <div class="wrap-master-gif">
             <div class="start2Impact-container">
               <h1 class="institute-title">Institute:</h1>
-              <img className="logo-s2i-extended" src={s2IextendedLogo} alt="logo Start 2 Impact"/>
+              <img 
+                className="logo-s2i-extended" 
+                src={s2IextendedLogo} 
+                alt="logo Start 2 Impact"
+              />
             </div>
             <div class="macbook-mockup">
               <img className="macbook-mockup" src={macBookAirMockup} alt="macbook air displaying Start 2 Impact full stack development course"/>
@@ -48,6 +56,7 @@ function Contact() {
           <a class="btn-master" href="https://start2impact.pro.typeform.com/to/xuE0ijXb?typeform-source=www.start2impact.it#brochure=full-stack&source=sito-web" target="_blank">Go to Master's page</a>   
         </section>
         <CvTools/>
+        <ProjectCard />
       </div>
       
       <Footer />

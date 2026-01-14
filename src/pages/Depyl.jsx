@@ -15,8 +15,8 @@ function Depyl () {
             <h1>Depyl</h1>
             <img className="project-logo" src={depylLogo} alt="Logo Depyl"/>
             <h3>Water filters</h3>
-          <p>🛠️ Build a Web Page that epresents the Brand.
-          👨🏻‍💻 Craft a professional and engaging web page that showcases the essence of a company. Here are the key elements your page should include to stand out:</p>
+          <p>Build a Web Page that epresents the Brand.
+          Craft a professional and engaging web page that showcases the essence of a company. Here are the key elements your page should include to stand out:</p>
           <ul> 
             <li>✍️ Company Name: Highlight the brand clearly and prominently.</li>
             <li>🎨 Company Logo: Create a simple yet eye-catching logo</li>
