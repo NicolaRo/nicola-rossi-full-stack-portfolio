@@ -41,8 +41,7 @@ function CV() {
                 alt="logo Start 2 Impact"
               />
             </div>
-            <div className="macbook-mockup">
-              <img className="macbook-mockup" src={macBookAirMockup} alt="macbook air displaying Start 2 Impact full stack development course"/>
+            <img className="macbook-mockup" src={macBookAirMockup} alt="macbook air displaying Start 2 Impact full stack development course"/>
             <div className="Masters-description">
               <h2 className="skill-list-title">Skills I've learned</h2>
               <ul className="skill-list">
@@ -52,8 +51,6 @@ function CV() {
                 <li>Backend development</li>
               </ul>
             </div>
-            </div>
-            
           </div>
           <a className="btn-master" href="https://start2impact.pro.typeform.com/to/xuE0ijXb?typeform-source=www.start2impact.it#brochure=full-stack&source=sito-web" target="_blank">Go to Master's page</a>   
         </section>

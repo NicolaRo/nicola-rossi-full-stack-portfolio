@@ -26,9 +26,7 @@ function ProjectDetails () {
         <div className="pj-details-container">
             <div className="pj-header">
                 <h1 className="project-title"> {project.title}</h1>
-                <div className="pj-logo">
-                    <img className="pj-logo" src={project.logo} alt={`${project.title} Logo`}></img>
-                </div>
+                <img className="pj-logo" src={project.logo} alt={`${project.title} Logo`}></img>
                 <div className="pj-description-container">
                     <div className="pj-tags">
                         {project.tags.map((tag, index) => (
