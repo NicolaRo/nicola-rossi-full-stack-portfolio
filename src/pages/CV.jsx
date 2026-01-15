@@ -21,15 +21,13 @@ function CV() {
         <section className="wrap-education-hero">
           <div className="CV-Page-title">
             <h1>Master degree</h1>
-            <div className= "page-header">
-              <div className="hero-img-container">
+            <div className="hero-img-container">
                 <img 
                   className="nicola-coding-img" 
                   src={nicolaCoding} 
                   alt="Nicola working at his pc"
                 />
               </div>
-            </div>
           </div>
         </section><h1> Full-Stack Development</h1>
         <section className="CV-hero-master">

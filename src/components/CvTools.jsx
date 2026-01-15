@@ -14,8 +14,6 @@ function CvTools () {
         Tools I use 
     </h1>
         <section className="tools-section">
-
-        
             <div className="skills-container-1">
 
             <div className="skills-bar">
@@ -39,6 +37,7 @@ function CvTools () {
                 </div>
             </div>
             <div className="skills-container-2">
+                
                 <div className="skills-bar">
                     <img className="language-icon" src={ReactLogo} alt="React logo"/>
                         <div className="bar back intermediate" data-skill="React"></div>
@@ -60,11 +59,7 @@ function CvTools () {
                 </div>
 
             </div>
-
-        </section>
-            
-
-                
+        </section>    
         </>
     );
 }

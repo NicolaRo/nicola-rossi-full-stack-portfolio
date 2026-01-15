@@ -5,13 +5,15 @@
     display:flex;
     flex-direction: row;
     position: relative;
-    width:100%;
+    justify-content: space-evenly;
 }
 
 .projects-cards{
     display:flex;
     flex-direction: row;
     overflow: scroll;
+    width: 60rem;
+    margin-left: 2rem;
 }
 // Container della card
 .project-card {
@@ -21,48 +23,44 @@
   margin: 1rem;
   padding: 1rem;
   width:15rem;
+  height: 20rem;
 }
 
 // Titolo
-.project-card-title {  // ⬅️ Doppio underscore
+.project-card-title { 
   background-color: transparent;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 
 // Logo
-.project-card-logo {  // ⬅️ Doppio underscore
-  width: 10rem;
+.project-card-logo { 
+  width: 4rem;
   background-color: transparent;
-  padding: v.$space-sm;  // ⬅️ Usa v. non variables.
-  display: block;
-  margin: 0 auto 1rem;
+  padding:0.25rem;
+  margin: 0;
 }
 
 // Container dei tag
-.project-card-tags {  // ⬅️ Doppio underscore
+.project-card-tags { 
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 0.2rem;
+  margin-bottom: 0.2rem;
   background-color: transparent;
   justify-content: center;
 }
 
 // Stile base per ogni singolo tag
-.project-card__tag {  // ⬅️ Doppio underscore
-  padding: 0.5rem 1rem;
+.project-card__tag { 
+  padding: 0.5rem;
   border-radius: 8px;
   border:v.$border-hover;
-  font-size: 0.875rem;
-  font-weight: 500;
   display: inline-block;
   color: #fff;
   background-color: #718096; // Colore di default
-  margin:0.25rem;
+  margin:0.2rem;
 }
 
-// ⬇️⬇️⬇️ LOOP FUORI, NON DENTRO! ⬇️⬇️⬇️
+
 @each $tag, $color in v.$tag-colors {
   .project-card__tag--#{$tag} {
     background-color: $color;
@@ -70,14 +68,14 @@
 }
 
 // Descrizione
-.project-card__description {  // ⬅️ Doppio underscore
+.project-card__description {
   margin-bottom: 1rem;
   color: v.$color-text;
 }
 
 // Bottone
-.project-card__button {  // ⬅️ Doppio underscore
-  background-color: v.$button-background;  // ⬅️ v. non variables.
+.project-card__button { 
+  background-color: v.$button-background;
   color: v.$button-text;
   font-weight: bold;
   padding: 0.75rem 1.5rem;

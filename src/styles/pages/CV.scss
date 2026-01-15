@@ -1,8 +1,14 @@
+@use '/src/styles/base/variables' as v;
+
 .language-icon{
     width: 50px;
     height: auto;
     margin: 2%;
 }
+.h1{
+  margin: 1rem;
+}
+
 .hero-img-container{
   background-image: url("/src/assets/images/CV-img/code-background.jpg") !important;
   background-size: cover;
@@ -10,22 +16,23 @@
   background-repeat: no-repeat;
   -webkit-backdrop-filter: blur(5px), brightness(0.8), contrast(1.2);
   backdrop-filter: blur(5px), brightness(0.8), contrast(1.2);
-  padding: 1%;
-  margin: 1%;
-  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  
 }
 .nicola-coding-img{
     width: 25%;
     height: auto;
     box-shadow: rgba(109, 0, 0, 0.684) 1 0 0;
-    margin: 1%;
-    padding: 2px;
-    border-radius: 500px;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 200px;
     border: solid 5px #6d0000;
 }
 
 .CV-hero-container {
-    padding: 1%;
+    padding: 1rem;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -34,21 +41,11 @@
     border-radius: 5px;
   }
   
-  .wrap-education-hero {
-    width: 100%;
-    height: auto;
-    margin-top: 200%;
-    margin: 0;
-    padding: 0;
-    display:flex;
-    flex-direction: column;
-    position:relative;
-    justify-content: flex-start;
-    text-align: left;
-    transition: transform 0.5s;
-    color:#a7a8a7;
-    font-size:30px;
-  }
+.wrap-education-hero {
+  margin-top: 5rem;
+  color: v.$color-text;
+  font-size:30px;
+}
   
   
   .CV-Page-title {
@@ -98,11 +95,8 @@
     margin:1rem;
   }
 .macbook-mockup{
-    width: 100%;
-  position: relative;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
+    width: 35rem;
+    height:auto;
 }
 
 .Master-description {
@@ -174,7 +168,7 @@ text-align: center;
     display:flex;
     flex-direction: row;
   }
-.Skills-container-1 .skills-container-2 {
+.Skills-container-1, .skills-container-2 {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -311,4 +305,10 @@ border-radius: 5px;
   .bar.expert::before{
     width: calc(95% - 10px);
   
+  }
+
+  .sliders-picture {
+    width: 20rem;
+    height: 20rem;
+    margin:2rem;
   }
