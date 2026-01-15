@@ -1,6 +1,9 @@
 //Importo hooks di React per la navigazione
 import {useNavigate, useParams} from "react-router-dom";
 
+//Importo i componenti
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 //Importo la pagina data per reperire le informazioni
@@ -18,6 +21,8 @@ function ProjectDetails () {
         return (<p>"Project not found"</p>);
         }
     return (
+        <>
+        <Navbar/>
         <div className="pj-details-container">
             <div className="pj-header">
                 <h1 className="project-title"> {project.title}</h1>
@@ -36,10 +41,22 @@ function ProjectDetails () {
                 </div>
                     <img className="pj-preview" src={project.preview} alt="Preview"/>
             </div>
-            <button className="pj-btn-next" 
-            onClick={() => navigate('/pages/project/'+project.id)}>Next Project</button>
             <button onClick={() => navigate(-1)}>Back</button>
-        </div>
+            <button className="pj-btn-next">
+            {project.gitHub && (
+                    <a 
+                    href={project.gitHub} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="github-button"
+                    >
+                    View on GitHub
+                    </a>
+                )}
+            </button>
+        </div>  
+        <Footer/>
+        </>
         
     );
 }
