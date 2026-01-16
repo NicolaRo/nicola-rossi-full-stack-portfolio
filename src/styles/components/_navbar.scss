@@ -1,10 +1,10 @@
-@use '../base/variables';
+@use '../base/variables' as v;
 @use '../base/mixins';
 
 
 .header{
     background-color: #050505;
-    box-shadow: variables.$box-shadow-red;
+    box-shadow: v.$box-shadow-red;
     //fixed in alto alla pagine rimane visibile anche scrollando
     position: fixed;
     width: 100%;
@@ -17,8 +17,8 @@
     width: 4rem;
     height: auto;
     float:left; //Posizionamento a sinistra
-    padding:variables.$space-md;
-    margin-top: variables.$space-md;
+    padding:v.$space-md;
+    margin-top: v.$space-md;
     background-color: transparent;
     cursor: pointer;
 }
@@ -30,7 +30,13 @@ ul {
   overflow: hidden;
   align-items: flex-end;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+}
+@media screen and (min-width: 780px) {
+    ul{
+        flex-direction: row;
+    }
 }
 
 li{
@@ -40,11 +46,11 @@ li{
 ul a,
 ul button {
     display:block; //Per occupare tutta l'area cliccabile
-    padding: variables.$space-lg;
+    padding: v.$space-lg;
     text-decoration:none; //Rimuove sottolineatura
     background: none;
     border: none;
-    color:variables.$button-text;
+    color:v.$button-text;
     font-size: 1rem;
     width: 100%;
     text-align:left;
@@ -53,7 +59,7 @@ ul button {
 ul a:hover,
 ul button:hover {
     background-color: #292929; //Cambia background all'hover
-    color: variables.$color-text;
+    color: v.$color-text;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -66,6 +72,7 @@ ul button:hover {
     max-height:0; //Quando diventa .menu-opn, max-height diventa 250px
     transition: max-height 0.5s ease-out;
     overflow: hidden; //Nasconde il contenuto che supera max-height
+    background-color: transparent;
     
 }
 
@@ -78,14 +85,14 @@ ul button:hover {
 // =========================================================
 
 .menu-icon{
-    padding: variables.$space-lg;
+    padding: v.$space-lg;
     position:relative;//Per contenere il nav-icon absolute
     float: right;
     cursor:pointer;
     background-color:#050505;
 }
 .nav-icon{
-    background-color: variables.$color-text;
+    background-color: v.$color-text;
     display: block; //Necessario per width e height
     
     //Disegno l'icona a partire dalle righe
@@ -96,7 +103,7 @@ ul button:hover {
     transition: background-color 0.5s ease-out;
     &::before,
     &::after{
-        background-color: variables.$color-text;
+        background-color: v.$color-text;
         content:""; //Content vuoto per mostrare i pseudo-elementi
         display: block;
         //Imposto 100% per eguagliare le dimensioni della linea centrale
@@ -139,7 +146,7 @@ ul button:hover {
     
     li a,
     li button{
-    padding: variables.$space-lg variables.$space-xl; //Padding orizzontale ampio su desktop
+    padding: v.$space-lg v.$space-xl; //Padding orizzontale ampio su desktop
     }
 
     .menu {
@@ -179,14 +186,14 @@ ul button:hover {
         li{
             float: none; //Rimuove il float su .header li
             button {
-                color:variables.$color-text;
-                padding: variables.$space-sm variables.$space-md;
+                color:v.$color-text;
+                padding: v.$space-sm v.$space-md;
                 width: 100%;
                 text-align: left;
 
                 &:hover{
                     background-color: #1a1a1a;
-                    color: variables.$button-text;
+                    color: v.$button-text;
                 }
             }
         }
