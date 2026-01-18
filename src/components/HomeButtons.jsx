@@ -1,9 +1,9 @@
 //Importo hook 'useNavigate di react-router-dom
 import { useNavigate } from 'react-router-dom';
 
-//Importo le immagini contenute nei bottoni
+/* //Importo le immagini contenute nei bottoni
 import cvLogo from '../assets/images/home-img/cvLogo.png';
-import contactLogo from '../assets/images/home-img/contactLogo.png';
+import contactLogo from '../assets/images/home-img/contactLogo.png'; */
 
 //Imposto la funzione che consente ai bottoni di caricare le pagine desiderate
 function HomeButtons () {
@@ -13,12 +13,12 @@ function HomeButtons () {
     return (
         <div className="home-buttons-container">
             <button className='cv-button' onClick={()=> navigate ("/cv")}>
-                <img className='button-cv-icon' src={cvLogo} alt="Developer icon"/>
+            <img className="language-icon" src="/images/home-img/cvlogo.png" alt="Developer icon"/>
                 My Developer Portfolio
             </button>
 
             <button className='contact-button' onClick={()=>navigate ("/contact")}>
-                <img className='button-contact-icon' src={contactLogo} alt="Contact icon"/>
+            <img className="language-icon" src="/images/home-img/contactlogo.png" alt="Contact icon"/>
                 Contact Me
             </button>
         </div>

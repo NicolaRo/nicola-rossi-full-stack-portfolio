@@ -7,11 +7,11 @@ import ProjectCard from '../components/ProjectCard.jsx';
 //Importo i dati per le cards e per renderizzare poi le pagine dei progetti
 import projectsData from '../data/projectsData';
 
-//Importo le immagini
+/* //Importo le immagini
 import nicolaCoding from '../assets/images/CV-img/Nicola-coding.jpg';
 import macbookairmockup from '../assets/images/CV-img/MacBook-air-S2I-Mockup.gif';
 import s2iextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp';
-import engineercodingGif from '../assets/images/CV-img/Coding-Software-Engineer_GIF.gif';
+import engineercodingGif from '../assets/images/CV-img/Coding-Software-Engineer_GIF.gif'; */
 function CV() {
   console.log("projectsData:", projectsData);
     return (
@@ -22,9 +22,8 @@ function CV() {
           <div className="CV-Page-title">
             <h1>Master degree</h1>
             <div className="hero-img-container">
-                <img 
-                  className="nicola-coding-img" 
-                  src={nicolaCoding} 
+                <img className="nicola-coding-img" 
+                  src="/images/CV-img/nicola.png"
                   alt="Nicola working at his pc"
                 />
               </div>
@@ -35,16 +34,15 @@ function CV() {
           <div className="wrap-master-gif">
             <div className="start2Impact-container">
               <h1 className="institute-title">Institute:</h1>
-              <img 
-                className="logo-s2i-extended" 
-                src={s2iextendedLogo} 
+              <img className="logo-s2i-extended" 
+                src="/images/CV-img/s2ilogo.webp"
                 alt="logo Start 2 Impact"
               />
             </div>
-            <img className="macbook-mockup" 
-              src={macbookairmockup} 
-              alt="macbook air displaying Start 2 Impact full stack development course"
-            />
+              <img className="macbook-mockup" 
+                src="/images/cv-img/s2i.gif"
+                alt="macbook air displaying Start 2 Impact full stack development course"
+              />
             <div className="Masters-description">
               <h2 className="skill-list-title">Skills I've learned</h2>
               <ul className="skill-list">
@@ -55,7 +53,11 @@ function CV() {
               </ul>
             </div>
           </div>
-          <a className="btn-master" href="https://start2impact.pro.typeform.com/to/xuE0ijXb?typeform-source=www.start2impact.it#brochure=full-stack&source=sito-web" target="_blank">Go to Master's page</a>   
+          <a className="btn-master"
+            href="https://start2impact.pro.typeform.com/to/xuE0ijXb?typeform-source=www.start2impact.it#brochure=full-stack&source=sito-web" 
+            target="_blank">
+              Go to Master's page
+          </a>   
         </section>
         <CvTools/>
       </div>
@@ -63,10 +65,10 @@ function CV() {
           My Projects
         </h3>
       <div className="card-slider">
-        
-        <img className="sliders-picture"
-        src={engineercodingGif}
-        alt="animation of an Engineer pretending to code"/>
+        <img className="sliders-picture" 
+          src="/images/cv-img/coding.gif"
+          alt="animation of an Engineer pretending to code"
+        />
         <div className="projects-cards">
         {projectsData.map((project) => (
           <ProjectCard

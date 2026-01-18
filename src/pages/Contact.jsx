@@ -1,6 +1,6 @@
 //Importo le immagini
-import contactpicture from "../assets/images/Contact-Me-img/Get-in-touch.png";
-import whatsappLogo from "../assets/images/Contact-Me-img/whatsapp.png";
+/* import contactpicture from "../assets/images/Contact-Me-img/Get-in-touch.png";
+import whatsappLogo from "../assets/images/Contact-Me-img/whatsapp.png"; */
 //Importo i componenti
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
@@ -11,12 +11,10 @@ function Contact() {
       <Navbar/>
       <h1>Contact Me</h1>
       <div className="contact-page">
-        
-        <img 
-          className="contact-me-hero-img"
-          src={contactpicture} 
-          alt="Illustration account is using the contact form"
-        />
+          <img className="contct-me-hero-img"
+            src="/images/contact-img/illustration.png"
+            alt="Illustration account is using the contact form"
+          />
         <div className="container-form">
         <div className="form-text">
           <p>Fill out the form below to send me a message. I will get back to you as soon as possible.</p>
@@ -69,9 +67,8 @@ function Contact() {
           rel="noopener noreferrer"
         > 
           Start a chat with me 
-          <img 
-            className="logo-whatsapp" 
-            src={whatsappLogo} 
+            <img className="logo-whatsapp" 
+            src="/images/contact-img/whatsapp.png" 
             alt="WhatsApp logo"
             style={{ height: '24px', textDecoration: 'none' }}
           />

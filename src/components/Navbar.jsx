@@ -1,8 +1,8 @@
 //Importo useState per gestire lo stato aperto/chiuso del menu
 import {useState} from 'react';
 
-//importo il logo
-import logo from '../assets/images/home-img/Logo_Black-White.png';
+/* //importo il logo
+import logo from '../assets/images/home-img/Logo_Black-White.png'; */
 
 //Importo hook di React useNavigate per consentire al logo di navigare alla Home
 import {useNavigate} from 'react-router-dom';
@@ -37,7 +37,8 @@ function Navbar () {
         {/*Inserisco il logo cliccabile che manderà alla Home se cliccato */ }
             <img 
                 className="logo-img" 
-                src={logo} alt="Logo Nico digital design" 
+                src="/images/home-img/logoblackwhite.png"
+                alt="Logo Nico digital design" 
                 onClick={() => navigate ('/')}
             />
 

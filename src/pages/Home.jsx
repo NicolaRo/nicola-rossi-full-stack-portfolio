@@ -5,8 +5,8 @@ import HomeButtons from '../components/HomeButtons';
 import Footer from '../components/Footer.jsx';
 import Navbar from '../components/Navbar.jsx';
 
-//Import dell'immagine di profilo
-import profilepicture from '../assets/images/home-img/Foto-Portfolio02_2024.png';
+/* //Import dell'immagine di profilo
+import profilepicture from '../assets/images/home-img/Foto-Portfolio02_2024.png'; */
 
 
 //Creo la funzione Home che conterrà tutto il contenuto della pagina
@@ -20,7 +20,7 @@ function Home () {
             <h1 className="bio-title">
                 I'm Nicola
             </h1>
-            <img className="profile-picture" src={profilepicture} alt="Nicola's picture black & white"/>
+            <img className="language-icon" src="/images/languages-img/fotoprofilo.png" alt="Nicola's picture black & white"/>
             <div className="bio-text">
                 <p>I am a motivated and detail-oriented developer with a strong background in Digital Graphic Design and a foundation in psychology.</p>
                 <p>After completing my Master’s degree in Digital Graphic Design in 2024, I further strengthened my expertise in the digital field by pursuing an additional Master’s degree in Full Stack Development.</p>
