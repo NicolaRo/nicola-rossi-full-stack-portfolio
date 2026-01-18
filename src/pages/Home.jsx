@@ -2,8 +2,8 @@
 import HomeButtons from '../components/HomeButtons';
 
 //Import dei componenti
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Footer from '../components/Footer.jsx';
+import Navbar from '../components/Navbar.jsx';
 
 //Import dell'immagine di profilo
 import profilePicture from '../assets/images/home-img/Foto-Portfolio02_2024.png';

@@ -2,8 +2,8 @@
 import ContactPicture from "../assets/images/Contact-Me-img/Get-in-touch.png";
 import WhatsappLogo from "../assets/images/Contact-Me-img/whatsapp.png";
 //Importo i componenti
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 
 function Contact() {
   return (

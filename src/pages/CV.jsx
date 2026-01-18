@@ -1,8 +1,8 @@
 //Importo i componenti funzionali
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import CvTools from '../components/CvTools';
-import ProjectCard from '../components/ProjectCard';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
+import CvTools from '../components/CvTools.jsx';
+import ProjectCard from '../components/ProjectCard.jsx';
 
 //Importo i dati per le cards e per renderizzare poi le pagine dei progetti
 import projectsData from '../data/projectsData';

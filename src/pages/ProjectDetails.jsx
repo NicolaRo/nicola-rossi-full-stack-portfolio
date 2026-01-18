@@ -2,8 +2,8 @@
 import {useNavigate, useParams} from "react-router-dom";
 
 //Importo i componenti
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 
 
 //Importo la pagina data per reperire le informazioni
