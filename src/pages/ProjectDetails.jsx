@@ -9,6 +9,9 @@ import Footer from '../components/Footer';
 //Importo la pagina data per reperire le informazioni
 import projectsData from "../data/projectsData";
 
+//Importo la pagina di stile per consentire l'applicazione dei colori dei tag
+import '../styles/pages/project-page.scss';
+
 
 
 
@@ -30,8 +33,10 @@ function ProjectDetails () {
                 <div className="pj-description-container">
                     <div className="pj-tags">
                         {project.tags.map((tag, index) => (
-                            <span key={index} className="pj-tag">{tag}</span>
-                        ))}
+                        <span key={index} className={`pj-tag pj-tag--${tag}`}>
+                            {tag}
+                            </span>
+                    ))}
                     </div>
                     <div className="pj-description-text">
                         <p> {project.detailDescription}</p>
