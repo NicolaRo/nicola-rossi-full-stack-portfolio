@@ -9,9 +9,9 @@ import projectsData from '../data/projectsData';
 
 //Importo le immagini
 import nicolaCoding from '../assets/images/CV-img/Nicola-coding.jpg';
-import macBookAirMockup from '../assets/images/CV-img/MacBook-air-S2I-Mockup.gif';
-import s2IextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp';
-import EngineerCodingGif from '../assets/images/CV-img/Coding-Software-Engineer_GIF.gif';
+import macbookairmockup from '../assets/images/CV-img/MacBook-air-S2I-Mockup.gif';
+import s2iextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp';
+import engineercodingGif from '../assets/images/CV-img/Coding-Software-Engineer_GIF.gif';
 function CV() {
   console.log("projectsData:", projectsData);
     return (
@@ -37,12 +37,12 @@ function CV() {
               <h1 className="institute-title">Institute:</h1>
               <img 
                 className="logo-s2i-extended" 
-                src={s2IextendedLogo} 
+                src={s2iextendedLogo} 
                 alt="logo Start 2 Impact"
               />
             </div>
             <img className="macbook-mockup" 
-              src={macBookAirMockup} 
+              src={macbookairmockup} 
               alt="macbook air displaying Start 2 Impact full stack development course"
             />
             <div className="Masters-description">
@@ -65,7 +65,7 @@ function CV() {
       <div className="card-slider">
         
         <img className="sliders-picture"
-        src={EngineerCodingGif}
+        src={engineercodingGif}
         alt="animation of an Engineer pretending to code"/>
         <div className="projects-cards">
         {projectsData.map((project) => (

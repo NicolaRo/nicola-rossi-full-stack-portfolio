@@ -1,6 +1,6 @@
 //Importo le immagini
-import ContactPicture from "../assets/images/Contact-Me-img/Get-in-touch.png";
-import WhatsappLogo from "../assets/images/Contact-Me-img/whatsapp.png";
+import contactpicture from "../assets/images/Contact-Me-img/Get-in-touch.png";
+import whatsappLogo from "../assets/images/Contact-Me-img/whatsapp.png";
 //Importo i componenti
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
@@ -14,7 +14,7 @@ function Contact() {
         
         <img 
           className="contact-me-hero-img"
-          src={ContactPicture} 
+          src={contactpicture} 
           alt="Illustration account is using the contact form"
         />
         <div className="container-form">
@@ -71,7 +71,7 @@ function Contact() {
           Start a chat with me 
           <img 
             className="logo-whatsapp" 
-            src={WhatsappLogo} 
+            src={whatsappLogo} 
             alt="WhatsApp logo"
             style={{ height: '24px', textDecoration: 'none' }}
           />

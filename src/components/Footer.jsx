@@ -1,7 +1,7 @@
 // Importo i loghi dei social che voglio linkare
 //Qui non serve useNavigate in quanto i link saranno esterni direttamente dentro le imagini
-import GitHubLogo from '../assets/images/footer-img/Github-Logo-Black.png';
-import LinkedinLogo from '../assets/images/footer-img/linkedin-icon-black.png';
+import githubLogo from '../assets/images/footer-img/Github-Logo-Black.png';
+import linkedinLogo from '../assets/images/footer-img/linkedin-icon-black.png';
 
 //Importo la componente Link dalla libreria di routing da react-router-dom
 import {Link} from 'react-router-dom'; 
@@ -22,7 +22,7 @@ function Footer () {
                     rel="noopener noreferrer">
                         <img 
                             className="social-icon" 
-                            src={GitHubLogo}
+                            src={githubLogo}
                             alt="GitHub Logo black"
                         />
                 </a>
@@ -34,7 +34,7 @@ function Footer () {
                 >
                     <img 
                         className="social-icon" 
-                        src={LinkedinLogo}
+                        src={linkedinLogo}
                         alt="Linkedin Logo black"
                     />
                 </a>
