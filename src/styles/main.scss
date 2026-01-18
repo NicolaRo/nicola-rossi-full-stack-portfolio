@@ -10,16 +10,21 @@
 @use './components/project-card';
 
 //Importo i files di stile delle pagine
-@use './pages/home.scss';
-@use './pages/contact.scss';
-@use './pages/CV.scss';
-@use './pages/project-page.scss';
+@use './pages/home';
+@use './pages/contact';
+@use './pages/CV';
+@use './pages/project-page';
+@use './components/cv-tools';
 
 * {
-background-color: variables.$color-background;
-color: variables.$color-text;
 font-family: 'Montserrat', sans-serif;
 text-decoration: none;
 list-style: none;
 
 }
+
+
+body {
+    background-color: variables.$color-background;
+    color: variables.$color-text;
+  }
