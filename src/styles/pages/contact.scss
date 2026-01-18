@@ -6,12 +6,10 @@
 .contact-page{
     margin-top: 5rem;
     display: flex;
-    flex-direction: row;
-    @include m.respond (xs) {
-      flex-direction: column;
+    flex-direction: column;
+    @include m.respond (md) {
+      flex-direction: row;
   }
-  
-    
 }
 .contact-form{
     background-color: transparent;
