@@ -9,16 +9,15 @@ function Contact() {
   return (
     <>
       <Navbar/>
+      <h1>Contact Me</h1>
       <div className="contact-page">
-        <h1>Contact Me</h1>
+        
         <img 
           className="contact-me-hero-img"
           src={ContactPicture} 
           alt="Illustration account is using the contact form"
         />
-      </div>
-      
-      <div className="container-form">
+        <div className="container-form">
         <div className="form-text">
           <p>Fill out the form below to send me a message. I will get back to you as soon as possible.</p>
           <form id="contact-form">
@@ -79,6 +78,9 @@ function Contact() {
         </a>
       </div>
       </div>
+      </div>
+      
+      
       <Footer/>
     </>
   );
