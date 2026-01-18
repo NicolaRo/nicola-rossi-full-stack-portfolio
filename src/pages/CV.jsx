@@ -41,7 +41,10 @@ function CV() {
                 alt="logo Start 2 Impact"
               />
             </div>
-            <img className="macbook-mockup" src={macBookAirMockup} alt="macbook air displaying Start 2 Impact full stack development course"/>
+            <img className="macbook-mockup" 
+              src={macBookAirMockup} 
+              alt="macbook air displaying Start 2 Impact full stack development course"
+            />
             <div className="Masters-description">
               <h2 className="skill-list-title">Skills I've learned</h2>
               <ul className="skill-list">

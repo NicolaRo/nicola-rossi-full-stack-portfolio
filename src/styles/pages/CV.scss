@@ -1,5 +1,13 @@
 @use '/src/styles/base/variables' as v;
+@use '/src/styles/base/mixins';
 
+
+@media screen and (max-width:680px) {
+  .cv-page{
+    width: 100vw;
+  };
+  
+}
 .language-icon{
     width: 50px;
     height: auto;
@@ -84,8 +92,12 @@
     margin:1rem;
   }
 .macbook-mockup{
-    width: 35rem;
-    height:auto;
+  width: 20rem;
+  height:auto;
+  margin: 0 auto;
+  @include mixins.respond (sm) { 
+    width: 32rem; 
+  }
 }
 
 .Master-description {
@@ -100,16 +112,19 @@ height: auto;
   .start2Impact-container{
     display: flex;
     flex-direction: column;
-    bottom: 10rem;
-  position: relative;
+    
+    position: relative;
     @media screen and (min-width: 650px) {
-      flex-direction: row; 
+      flex-direction: row;
+      
     }
  
   }
   .institute-title{
     margin:1rem;
+    width: fit-content;
   }
+ 
 .wrap-master-gif{
   display: block ruby;
   border-radius: 8px;
