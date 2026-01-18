@@ -1,6 +1,6 @@
 //Importo le immagini
-import CSSLogo from "../assets/images/languages-img/CSS-Logo.png";
-import HTMLLogo from "../assets/images/languages-img/HTML-Logo.png";
+import CSSLogo from "../assets/images/languages-img/CSS-logo.png";
+import HTMLLogo from "../assets/images/languages-img/HTML-logo.png";
 import JavascriptLogo from "../assets/images/languages-img/Javascript-logo.png";
 import ReactLogo from "../assets/images/languages-img/React-logo.png";
 import TypescriptLogo from "../assets/images/languages-img/Typescript_Sviluppo-logo.png";
