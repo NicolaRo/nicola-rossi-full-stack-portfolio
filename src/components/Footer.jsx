@@ -22,7 +22,7 @@ function Footer () {
                     rel="noopener noreferrer">
                         <img 
                             className="social-icon" 
-                            src="/images/home-img/github.png" 
+                            src="/images/home-img/githublogo.png" 
                             alt="GitHub Logo black"
                         />
                 </a>
@@ -34,7 +34,7 @@ function Footer () {
                 >
                     <img 
                         className="social-icon" 
-                        src="/images/home-img/linkedin.png" 
+                        src="/images/home-img/linkedinlogo.png" 
                         alt="Linkedin Logo black"
                     />
                 </a>

@@ -23,7 +23,7 @@ function CV() {
             <h1>Master degree</h1>
             <div className="hero-img-container">
                 <img className="nicola-coding-img" 
-                  src="/images/CV-img/nicola.png"
+                  src="/images/cv-img/nicola.jpg"
                   alt="Nicola working at his pc"
                 />
               </div>
@@ -35,7 +35,7 @@ function CV() {
             <div className="start2Impact-container">
               <h1 className="institute-title">Institute:</h1>
               <img className="logo-s2i-extended" 
-                src="/images/CV-img/s2ilogo.webp"
+                src="/images/cv-img/s2ilogo.webp"
                 alt="logo Start 2 Impact"
               />
             </div>

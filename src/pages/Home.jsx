@@ -20,7 +20,7 @@ function Home () {
             <h1 className="bio-title">
                 I'm Nicola
             </h1>
-            <img className="language-icon" src="/images/languages-img/fotoprofilo.png" alt="Nicola's picture black & white"/>
+            <img className="language-icon" src="/images/home-img/fotoprofilo.png" alt="Nicola's picture black & white"/>
             <div className="bio-text">
                 <p>I am a motivated and detail-oriented developer with a strong background in Digital Graphic Design and a foundation in psychology.</p>
                 <p>After completing my Master’s degree in Digital Graphic Design in 2024, I further strengthened my expertise in the digital field by pursuing an additional Master’s degree in Full Stack Development.</p>
