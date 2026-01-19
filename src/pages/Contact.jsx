@@ -58,7 +58,7 @@ function Contact() {
   return (
     <>
       <Navbar/>
-      <h1>Contact Me</h1>
+      <h1 className="contact-title">Contact Me</h1>
       <div className="contact-page">
           <img className="contct-me-hero-img"
             src="/images/contact-img/illustration.png"
