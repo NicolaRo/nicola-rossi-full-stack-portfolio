@@ -23,7 +23,7 @@ function CV() {
             <h1>Master degree</h1>
             <div className="hero-img-container">
                 <img className="nicola-coding-img" 
-                  src="/images/cv-img/nicola.jpg"
+                  src="/images/cv-img/nicola.png"
                   alt="Nicola working at his pc"
                 />
               </div>

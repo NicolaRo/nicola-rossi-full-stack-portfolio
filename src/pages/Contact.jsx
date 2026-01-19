@@ -1,11 +1,60 @@
-//Importo le immagini
-/* import contactpicture from "../assets/images/Contact-Me-img/Get-in-touch.png";
-import whatsappLogo from "../assets/images/Contact-Me-img/whatsapp.png"; */
+//Importo gli stati di React per gestire l'invio dal form
+import {useState} from 'react';
+
 //Importo i componenti
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 
+
+
 function Contact() {
+
+    const [formStatus, setFormStatus] = useState('');
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      
+      const name = e.target.name.value.trim();
+      const email = e.target.email.value.trim();
+      const message = e.target.message.value.trim();
+  
+      // Validazioni
+      if (name.length < 2) {
+        alert("Name lenght must be at least 2 digits.");
+        return;
+      }
+  
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Please provide a valid e-mail address.");
+        return;
+      }
+  
+      if (message.length < 10) {
+        alert("The message must be of minimum 10 digits.");
+        return;
+      }
+  
+      // Invia con EmailJS
+      setFormStatus('sending');
+  
+      window.emailjs.sendForm(
+        'service_a2dm5gk',      //Service ID
+        'template_0zzzi64',      //Template ID
+        e.target
+      )
+      .then(() => {
+        alert('Message sent!');
+        e.target.reset();
+        setFormStatus('success');
+      })
+      .catch((error) => {
+        alert("Error, try again.");
+        console.error('EmailJS Error:', error);
+        setFormStatus('error');
+      });
+    };
+
   return (
     <>
       <Navbar/>
@@ -18,7 +67,7 @@ function Contact() {
         <div className="container-form">
         <div className="form-text">
           <p>Fill out the form below to send me a message. I will get back to you as soon as possible.</p>
-          <form id="contact-form">
+          <form id="contact-form" onSubmit={handleSubmit}>
             <div className="field">
               <label htmlFor="name">Name</label>
               <input 
@@ -54,7 +103,10 @@ function Contact() {
             </div>
             
             <div className="submit-btn-container">
-              <button type="submit">Send message</button>
+            <button type="submit" disabled={formStatus === 'sending'}>
+                  {formStatus === 'sending' ? 'Sending message...' : 'Send message'}
+                </button>
+              {/* <button type="submit">Send message</button> */}
             </div>
             
           </form>
