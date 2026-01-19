@@ -13,12 +13,12 @@ function HomeButtons () {
     return (
         <div className="home-buttons-container">
             <button className='cv-button' onClick={()=> navigate ("/cv")}>
-            <img className="language-icon" src="/images/home-img/cvlogo.png" alt="Developer icon"/>
+            <img className="button-cv-icon" src="/images/home-img/cvlogo.png" alt="Developer icon"/>
                 My Developer Portfolio
             </button>
 
             <button className='contact-button' onClick={()=>navigate ("/contact")}>
-            <img className="language-icon" src="/images/home-img/contactlogo.png" alt="Contact icon"/>
+            <img className="button-contact-icon" src="/images/home-img/contactlogo.png" alt="Contact icon"/>
                 Contact Me
             </button>
         </div>
