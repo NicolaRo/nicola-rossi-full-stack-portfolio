@@ -1,0 +1,41 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+.portfolio-bio{
+margin-top:10rem;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+height: fit-content;
+align-items: center;
+
+    @include mixins.respond (md) { // larghezza minima (≥768px)
+        display:flex;
+        flex-direction: row;
+    }
+}
+
+.profile-picture {
+    width: 25rem;
+    height: auto;
+    margin: 2rem;
+}
+
+.bio-title{
+    margin: 2rem;
+    align-items: center;
+}
+.bio-text{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 1rem;
+}
+
+.home-buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+    margin: 2rem;
+}

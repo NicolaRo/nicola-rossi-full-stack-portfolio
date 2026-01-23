@@ -1,0 +1,49 @@
+@use '../base/variables' as v;
+
+.pj-details-container{
+    margin-top: 10rem;
+}
+
+.pj-logo{
+width: 10rem;
+height: auto;
+padding: 1rem;
+}
+
+
+.pj-tag { 
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: rgba(255, 0, 0, 0.995);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
+  color: #fff;
+  margin: 0.25rem;
+}
+  
+@each $tag, $color in v.$tag-colors {
+  .pj-tag--#{$tag} {
+    background-color: $color;
+  }
+}
+
+.pj-description-text{
+    text-align: left;
+    padding: 1rem;
+}
+
+.pj-preview{
+  padding: 2rem;
+  width: 20rem;
+}
+
+.pj-btn-container{
+    padding: 2rem;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.pj-btn-next{
+  margin: 2rem;
+}
