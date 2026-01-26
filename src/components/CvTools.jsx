@@ -1,12 +1,4 @@
-/* //Importo le immagini
-import cssLogo from "../assets/images/languages-img/CSS-logo.png";
-import htmlLogo from "../assets/images/languages-img/HTML-logo.png";
-import javascriptLogo from "../assets/images/languages-img/Javascript-logo.png";
-import reactLogo from "../assets/images/languages-img/React-logo.png";
-import typescriptLogo from "../assets/images/languages-img/Typescript_Sviluppo-logo.png";
-import nodejsLogo from "../assets/images/languages-img/NodeJs-logo.png";
-import mysqlLogo from "../assets/images/languages-img/MySQL-logo.png";
-import phpLogo from "../assets/images/languages-img/PHP-logo.png";    */   
+  
 
 function CvTools () {
     return (

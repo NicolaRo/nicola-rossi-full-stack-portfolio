@@ -7,11 +7,7 @@ import ProjectCard from '../components/ProjectCard.jsx';
 //Importo i dati per le cards e per renderizzare poi le pagine dei progetti
 import projectsData from '../data/projectsData';
 
-/* //Importo le immagini
-import nicolaCoding from '../assets/images/CV-img/Nicola-coding.jpg';
-import macbookairmockup from '../assets/images/CV-img/MacBook-air-S2I-Mockup.gif';
-import s2iextendedLogo from '../assets/images/CV-img/Logo_Start2Impact.webp';
-import engineercodingGif from '../assets/images/CV-img/Coding-Software-Engineer_GIF.gif'; */
+
 function CV() {
   console.log("projectsData:", projectsData);
     return (

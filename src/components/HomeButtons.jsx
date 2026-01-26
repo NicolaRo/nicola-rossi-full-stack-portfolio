@@ -1,10 +1,6 @@
 //Importo hook 'useNavigate di react-router-dom
 import { useNavigate } from 'react-router-dom';
 
-/* //Importo le immagini contenute nei bottoni
-import cvLogo from '../assets/images/home-img/cvLogo.png';
-import contactLogo from '../assets/images/home-img/contactLogo.png'; */
-
 //Imposto la funzione che consente ai bottoni di caricare le pagine desiderate
 function HomeButtons () {
     //Salvo la funzione nella variabile per usare l'hook di React

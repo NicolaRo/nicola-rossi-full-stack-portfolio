@@ -1,22 +1,4 @@
-/* //Importo i loghi:
-import depylLogo from "../assets/images/Projects-img/Depyl_Logo_Clear.png";
-import greenearthLogo from "../assets/images/Projects-img/GreenEarth-logo.png";
-import ecoawareLogo from "../assets/images/Projects-img/EcoAware-logo.png";
-import thecountertopLogo from "../assets/images/Projects-img/CounterTop-logo.png";
-import owlyLogo from "../assets/images/Projects-img/Owly-logo.png";
-import veggiebookLogo from "../assets/images/Projects-img/VeggieBook-logo.png";
-import comingsoonwhiteLogo from "../assets/images/CV-img/Coming-soon-icon_white.png";
-import comingsoonblackLogo from "../assets/images/CV-img/Coming-soon-icon_black.png";
 
-
-//Importo le preview dei progetti
-import previewdepyl from '../assets/images/Projects-img/Depyl-macbook-preview.gif';
-import previewgreenearth from '../assets/images/Projects-img/GreenEarth-preview.gif';
-import previewecoaware from '../assets/images/Projects-img/EcoAware-preview.gif';
-import previewthecountertop from '../assets/images/Projects-img/TheCounterTop-preview.gif';
-import previewowly from '../assets/images/Projects-img/Owly-preview.gif';
-import previewveggiebook from '../assets/images/Projects-img/VeggieBook-preview.gif';
- */
 const projectsData =[
     {
         id: "depyl",
