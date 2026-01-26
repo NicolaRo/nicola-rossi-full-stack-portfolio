@@ -30,9 +30,7 @@ function Home () {
         </section>
 
         <div className='home-buttons-container'>
-            {/*Qui in fondo inserisco il componente dei bottoni della home ed il Footer */}
             <HomeButtons/>
-            
         </div>
         <Footer />
         </>
