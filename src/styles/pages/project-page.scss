@@ -44,8 +44,11 @@ padding: 1rem;
   display: flex;
 }
 
-.pj-btn-next{
+.pj-btn-next, .pj-btn-demo{
   margin: 2rem;
+  background-color: v.$button-background;
+  color: v.$button-text;
+  border-radius: 8px;
 }
 
 .pj-video-wrapper {

@@ -20,7 +20,7 @@ function CvTools () {
 
                 <div className="skills-bar">
                     <img className="language-icon" src="/images/languages-img/javascript.png"alt="Javascript logo"/>
-                        <div className="bar back intermediate" data-skill="JavaScript"></div>
+                        <div className="bar back advanced" data-skill="JavaScript"></div>
                 </div>
 
                 <div className="skills-bar">
@@ -32,22 +32,22 @@ function CvTools () {
                 
                 <div className="skills-bar">
                     <img className="language-icon" src="/images/languages-img/react.png"alt="React logo"/>
-                        <div className="bar back intermediate" data-skill="React"></div>
+                        <div className="bar back advanced" data-skill="React"></div>
                 </div>
 
                 <div className="skills-bar">
                     <img className="language-icon" src="/images/languages-img/nodejs.png"alt="NodeJs logo"/>
-                        <div className="bar front learning" data-skill="NodeJS"></div>
+                        <div className="bar front intermediate" data-skill="NodeJS"></div>
                 </div>
                 
                 <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/mysql.png"alt="MySQL logo"/>
-                        <div className="bar front learning" data-skill="MySql"></div>
+                    <img className="language-icon" src="/images/languages-img/mongoDB.png"alt="MongoDBL logo"/>
+                        <div className="bar front intermediate" data-skill="MongoDB"></div>
                 </div>
 
                 <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/php.png"alt="PHP logo"/>
-                        <div className="bar front learning" data-skill="PHP"></div>
+                    <img className="language-icon" src="/images/languages-img/AI.png"alt="AI logo"/>
+                        <div className="bar front intermediate" data-skill="AI"></div>
                 </div>
 
             </div>

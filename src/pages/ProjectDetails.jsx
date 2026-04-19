@@ -19,6 +19,7 @@ function ProjectDetails() {
   if (!project) {
     return <p>"Project not found"</p>;
   }
+  
   return (
     <>
       <Navbar />
@@ -50,13 +51,15 @@ function ProjectDetails() {
                 allowFullScreen
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               />
+              
             </div>
           ) : (
             <img className="pj-preview" src={project.preview} alt="Preview" />
           )}
+          
         </div>
-        <button onClick={() => navigate(-1)}>Back</button>
-        <button className="pj-btn-next">
+        <button className="btn-back" onClick={() => navigate(-1)}>Back</button>
+        <a className="pj-btn-next">
           {project.gitHub && (
             <a
               href={project.gitHub}
@@ -67,7 +70,15 @@ function ProjectDetails() {
               View on GitHub
             </a>
           )}
-        </button>
+        </a>
+        {project.demo && (
+            <a className="pj-btn-demo"
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer">
+                Try Demo
+            </a>
+        )}
       </div>
       <Footer />
     </>

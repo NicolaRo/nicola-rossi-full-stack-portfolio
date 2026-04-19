@@ -127,21 +127,17 @@ height: auto;
   }
  
 .wrap-master-gif{
-  display: block ruby;
+  display:flex;
+  flex-direction: column;
   border-radius: 8px;
 }
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
   .wrap-master-gif{
     display:flex;
     flex-direction: column;
   }
-  
-  
-}
-
-
-
+} */
   .sliders-picture {
     width: 20rem;
     height: 20rem;
