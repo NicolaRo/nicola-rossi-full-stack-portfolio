@@ -42,7 +42,18 @@ function ProjectDetails () {
                         <p> {project.detailDescription}</p>
                     </div>
                 </div>
-                    <img className="pj-preview" src={project.preview} alt="Preview"/>
+                {project.youtubeId ? (
+  <div className="pj-video-wrapper">
+    <iframe
+      src={`https://www.youtube.com/embed/${project.youtubeId}`}
+      title={`${project.title} demo`}
+      allowFullScreen
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    />
+  </div>
+) : (
+  <img className="pj-preview" src={project.preview} alt="Preview"/>
+)}
             </div>
             <button onClick={() => navigate(-1)}>Back</button>
             <button className="pj-btn-next">

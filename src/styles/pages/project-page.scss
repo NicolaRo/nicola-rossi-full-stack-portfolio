@@ -47,3 +47,19 @@ padding: 1rem;
 .pj-btn-next{
   margin: 2rem;
 }
+
+.pj-video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; // rapporto 16:9
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px; // opzionale, per matchare lo stile delle preview
+  }
+}
