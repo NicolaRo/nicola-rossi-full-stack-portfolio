@@ -84,7 +84,7 @@ const projectsData =[
         tags: ["n8n", "LLM", "OpenAI"],
         youtubeId:"HcReLqzooTM",
         category: ["AI", "Agent"],
-        description: "AI agent that autonomously manages appointment scheduling through natural language.",
+        description: "AI agent to schedule appointment through natural language.",
         detailDescription:"The Agent receives requests via a Telegram bot (text or voice, with voice messages transcribed into text before being processed by the LLM), retrieves contact details (name and email) from Airtable, sends confirmation via Gmail, and notifies the outcome through Telegram — all without manual intervention.",
     },
     {
@@ -94,7 +94,7 @@ const projectsData =[
         tags: ["NodeJS", "Express", "React"],
         preview:"/images/projects-img/depylpreview.gif",
         category: ["AI", "fullstack"],
-        description: "A full stack web application that leverages AI to analyze and evaluate second-hand clothing items, helping users assess their quality and potential value.",
+        description: "Full stack webApp. Integrated AI prices second-hand clothing.",
         detailDescription:"The App features full CRUD functionality, frontend state management, and a RESTful API for client-server communication, with persistent data storage. The application integrates an LLM for AI-driven evaluations, supports image uploads on the frontend, and uses the OpenAI API to generate assistant responses. Deployed on Netlify.",
         gitHub:"https://github.com/NicolaRo/LookBook",
     }
