@@ -5,7 +5,7 @@ const projectsData =[
         title: "LookBook",
         logo: "/images/projects-img/LookBook-AI-agent.png",
         tags: ["NodeJS", "Express", "React"],
-        preview:"/images/projects-img/depylpreview.gif",
+        preview:"/images/projects-img/LookBook-preview.gif",
         category: ["AI", "fullstack"],
         description: "Full stack webApp. Integrated AI prices second-hand clothing.",
         detailDescription:"The App features full CRUD functionality, frontend state management, and a RESTful API for client-server communication, with persistent data storage. The application integrates an LLM for AI-driven evaluations, supports image uploads on the frontend, and uses the OpenAI API to generate assistant responses. Deployed on Netlify.",
