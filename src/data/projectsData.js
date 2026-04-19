@@ -80,7 +80,7 @@ const projectsData =[
     {
         id: "Ai Scheduling Agent ",
         title: "AI Scheduling Agent",
-        logo: "/images/projects-img/depyl.png",
+        logo: "/images/AI Agent.png",
         tags: ["n8n", "LLM", "OpenAI"],
         youtubeId:"HcReLqzooTM",
         category: ["AI", "Agent"],
@@ -90,7 +90,7 @@ const projectsData =[
     {
         id: "LookBook",
         title: "LookBook",
-        logo: "/images/projects-img/depyl.png",
+        logo: "/images/LookBook-AI-agent.png",
         tags: ["NodeJS", "Express", "React"],
         preview:"/images/projects-img/depylpreview.gif",
         category: ["AI", "fullstack"],
