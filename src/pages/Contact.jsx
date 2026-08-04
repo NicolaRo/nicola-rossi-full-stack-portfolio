@@ -1,11 +1,5 @@
-//Importo gli stati di React per gestire l'invio dal form
+//Import React states
 import {useState} from 'react';
-
-//Importo i componenti
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
-
-
 
 function Contact() {
 
@@ -35,7 +29,7 @@ function Contact() {
         return;
       }
   
-      // Invia con EmailJS
+      // Send with EmailJS
       setFormStatus('sending');
   
       window.emailjs.sendForm(
@@ -57,13 +51,7 @@ function Contact() {
 
   return (
     <>
-      <Navbar/>
       <h1 className="contact-title">Contact Me</h1>
-      <div className="contact-page">
-          <img className="contct-me-hero-img"
-            src="/images/contact-img/illustration.png"
-            alt="Illustration account is using the contact form"
-          />
         <div className="container-form">
         <div className="form-text">
           <p>Fill out the form below to send me a message. I will get back to you as soon as possible.</p>
@@ -126,11 +114,7 @@ function Contact() {
           />
         </a>
       </div>
-      </div>
-      </div>
-      
-      
-      <Footer/>
+        </div>
     </>
   );
 }

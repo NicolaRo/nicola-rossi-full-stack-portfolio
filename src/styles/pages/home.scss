@@ -9,10 +9,10 @@ justify-content: space-evenly;
 height: fit-content;
 align-items: center;
 
-    @include mixins.respond (md) { // larghezza minima (≥768px)
+   /*  @include mixins.respond (md) { // larghezza minima (≥768px)
         display:flex;
         flex-direction: row;
-    }
+    } */
 }
 
 .profile-picture {

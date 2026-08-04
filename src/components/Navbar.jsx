@@ -7,8 +7,6 @@ import logo from '../assets/images/home-img/Logo_Black-White.png'; */
 //Importo hook di React useNavigate per consentire al logo di navigare alla Home
 import {useNavigate} from 'react-router-dom';
 
-//Importo i bottoni che ho creato in componente separato
-import NavButtons from './NavButtons';
 
 //Imposto la funzione in cui vive il componente
 function Navbar () {
@@ -54,10 +52,7 @@ function Navbar () {
 
 {/*MENU NAVIGATION */}
 <nav className={`menu ${isMenuOpen ? 'menu-open': ''}`}>
-  <NavButtons
-    isMenuOpen={isMenuOpen}
-    closeMenu={closeMenu}
-  />
+
 </nav>
         </header>
     );

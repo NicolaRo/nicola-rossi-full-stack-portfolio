@@ -1,57 +1,74 @@
-  
+import AIIcon from '../assets/stack-icons/AI.png';
+import CssIcon from '../assets/stack-icons/css.png';
+import HtmlIcon from '../assets/stack-icons/html.png';
+import JavascriptIcon from '../assets/stack-icons/javascript.png';
+import MongoDBIcon from '../assets/stack-icons/mongoDB.png';
+import NodejsIcon from '../assets/stack-icons/nodejs.png';
+import ReactIcon from '../assets/stack-icons/react.png';
+import TypescriptIcon from '../assets/stack-icons/typescript.png';
+import WordpressIcon from '../assets/stack-icons/wordpress.png';
 
 function CvTools () {
     return (
-        <><h1>
-        Tools I use 
-    </h1>
-        <section className="tools-section">
-            <div className="skills-container-1">
+        <>
+        <h2 className= "text-h2">My stacks</h2>
 
-            <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/html.png" alt="HTML-logo"/>
-                        <div className="bar back advanced" data-skill="HTML" ></div>
-                </div>
+        <div className="tools-grid">
+        <img 
+                className="language-icon" 
+                src={HtmlIcon}
+                alt="HTML-logo"
+            />
 
-                <div className="skills-bar">
-                <img className="language-icon" src="/images/languages-img/css.png"alt="CSS-logo"/>
-                        <div className="bar back advanced" data-skill="CSS"></div>
-                </div>
+            <img 
+                className="language-icon" 
+                src={CssIcon}
+                alt="CSS-logo"
+            />
 
-                <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/javascript.png"alt="Javascript logo"/>
-                        <div className="bar back advanced" data-skill="JavaScript"></div>
-                </div>
+            <img 
+                className="language-icon" 
+                src={JavascriptIcon}
+                alt="Javascript logo"
+            />
 
-                <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/typescript.png"alt="Typescript logo"/>
-                        <div className="bar back intermediate" data-skill="Typescript"></div>
-                </div>
-            </div>
-            <div className="skills-container-2">
+            <img 
+                className="language-icon" 
+                src={TypescriptIcon}
+                alt="Typescript logo"
+            />
                 
-                <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/react.png"alt="React logo"/>
-                        <div className="bar back advanced" data-skill="React"></div>
-                </div>
+            <img 
+                className="language-icon" 
+                src={ReactIcon}
+                alt="React logo"
+            />
 
-                <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/nodejs.png"alt="NodeJs logo"/>
-                        <div className="bar front intermediate" data-skill="NodeJS"></div>
-                </div>
-                
-                <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/mongoDB.png"alt="MongoDBL logo"/>
-                        <div className="bar front intermediate" data-skill="MongoDB"></div>
-                </div>
+            <img 
+                className="language-icon" 
+                src={NodejsIcon}
+                alt="NodeJs logo"
+            />
 
-                <div className="skills-bar">
-                    <img className="language-icon" src="/images/languages-img/AI.png"alt="AI logo"/>
-                        <div className="bar front intermediate" data-skill="AI"></div>
-                </div>
+            <img 
+                className="language-icon" 
+                src={MongoDBIcon}
+                alt="MongoDBL logo"
+            />
+ 
 
-            </div>
-        </section>    
+            <img 
+                className="language-icon" 
+                src={AIIcon}
+                alt ="AI logo"
+            />
+            <img 
+                className="language-icon" 
+                src={WordpressIcon}
+                alt ="Wordpress logo"
+            />
+        </div>
+            
         </>
     );
 }

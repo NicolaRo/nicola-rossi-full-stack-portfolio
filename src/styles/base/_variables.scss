@@ -42,3 +42,40 @@ $tag-colors: (
   'LLM': #881b00,
   'OpenAI':#000000,
 );
+
+
+
+/* 
+====================================================== */
+
+
+/*-=-=-= SEMANTIC COLOR PALETTE =-=-=- */
+
+//## PRIMITIVES 
+$gray-900: #212121; //-> dark gray for background
+$gray-100: #E5E5E5;  // -> light gray for texts
+$blue-500:#70B4E1; //-> light blue as the accent color
+
+//## SEMANTIC -> Colors that communicates success failure or warnings
+$color-error: #FF8A8A; //-> buttons close/remove
+$color-text: $gray-100;
+$color-background: $gray-900;
+$color-border-subtle: rgba($gray-100, 0.1); // container border light
+
+/*-=-=-= ELEVATION HIERARCHY =-=-=- */
+$shadow-sm: 1px 1px 15px 1px rgba(0, 0, 0, 0.15);
+$shadow-md: 1px 1px 30px 2px rgba(0, 0, 0, 0.3);
+/* $shadow-glow: 1px 1px 15px 2px rgba(2, 247, 137, 0.4); */
+$shadow-skeleton: 1px 1px 10px 1px rgba(35, 143, 129, 0.235), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+
+/*-=-=-= RADIUS =-=-=- */
+$glass-background: rgba(255, 255, 255, 0.14);
+
+$radius-xl: 4rem;
+$radius-lg: 3rem;
+$radius-md: 2rem;
+$radius-sm: 1rem;
+$rounded-radius: 50%;
+
+$background:  rgb(249, 249, 249);
+

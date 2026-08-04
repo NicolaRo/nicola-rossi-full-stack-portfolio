@@ -1,37 +1,49 @@
-//Import dei bottoni
-import HomeButtons from '../components/HomeButtons';
 
-//Import dei componenti
+//Import components
 import Footer from '../components/Footer.jsx';
 import Navbar from '../components/Navbar.jsx';
+import CvTools from '../components/CvTools.jsx';
+import Contact from './Contact.jsx';
+import ProjectCard from '../components/ProjectCard.jsx';
+import {projects} from '../data/projectData.js';
 
-/* //Import dell'immagine di profilo
-import profilepicture from '../assets/images/home-img/Foto-Portfolio02_2024.png'; */
+
+//Import profile picture
+import ProfilePicture from '../assets/fotoprofilo.png';
 
 
-//Creo la funzione Home che conterrà tutto il contenuto della pagina
 function Home () {
-    //La funzione "ritorna":
     return (
         <>
         <Navbar/>
-        { /*la sezione bio in cui sta l'immagine profilo il titolo e il paragrafo */ }
         <section className="portfolio-bio">
-            <h1 className="bio-title">
-                I'm Nicola
-            </h1>
-            <img className="profile-picture" src="/images/home-img/fotoprofilo.png" alt="Nicola's picture black & white"/>
+            <h1 className="text-h1">Nicola Rossi</h1>
+            <h2 className="text-h2">Full Stack Developer</h2>
+            <img
+                className="profile-picture" 
+                src={ProfilePicture} 
+                alt="Nicola's picture black & white"
+            />
             <div className="bio-text">
-                <p>I am a motivated and detail-oriented developer with a strong background in Digital Graphic Design and a foundation in psychology.</p>
-                <p>After completing my Master’s degree in Digital Graphic Design in 2024, I further strengthened my expertise in the digital field by pursuing an additional Master’s degree in Full Stack Development.</p>
-                <p>I develop today thinking about tomorrow's scalability and maintainability, with a keen eye on sustainability and User Experience.</p>
+                <p>I develop digital products designed to solve real-world problems through thoughtful engineering.</p>
+                <p>From AI-driven assistants and autonomous workflows to scalable full stack applications, I focus on creating software that is intuitive, maintainable, and built with purpose.</p>
+                <p>Every project is an opportunity to refine, improve, and deliver lasting value.</p>
+                <p>Every release is a foundation for the next.</p>
             </div>
-            
         </section>
+        
+        <CvTools/>
 
-        <div className='home-buttons-container'>
-            <HomeButtons/>
-        </div>
+        <section className="projects-section">
+            {projects.map((project) => (
+                <ProjectCard 
+                    key={project.id} 
+                    project={project}
+                />
+            ))}
+        </section>
+        
+        <Contact />
         <Footer />
         </>
     );

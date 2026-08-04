@@ -44,22 +44,11 @@
 }
 
 .skills-container-1 {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  /* width: 48%; */
-  flex: 1;
+  flex-direction:row;
   justify-content: space-evenly;
 }
 
-.skills-container-2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  /* width: 48%; */
-  flex: 1;
-  justify-content: space-evenly;
-}
 
 // I due container delle skill
 .Skills_1-2{
