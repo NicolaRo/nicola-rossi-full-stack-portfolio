@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     "id": "Counter",
-    "bio": "Simple calculator made with javascript",
+    "bio": "JavaScript-based counter application that allows users to increment, decrement, record, and reset numerical values through a simple and intuitive interface.",
     "repoUrl": "https://github.com/NicolaRo/Counter",
     "title": "The Counter Top",
     "tags": [

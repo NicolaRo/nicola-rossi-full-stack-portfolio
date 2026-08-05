@@ -11,8 +11,8 @@ import WordpressIcon from '../assets/stack-icons/wordpress.png';
 function CvTools () {
     return (
         <>
+        <div className ="stacks-container">
         <h2 className= "text-h2">My stacks</h2>
-
         <div className="tools-grid">
         <img 
                 className="language-icon" 
@@ -68,6 +68,8 @@ function CvTools () {
                 alt ="Wordpress logo"
             />
         </div>
+        </div>
+
             
         </>
     );

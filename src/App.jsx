@@ -5,8 +5,7 @@ import './App.css'
 //Import dei componenti presenti nella pagina
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
-
-//Import delle pagine linkate nella Home del portfolio
+import BackgroundGlow from './components/BackgroundGlow.jsx';
 import Home from './pages/Home.jsx';
 
 //Import dello stile da applicare all'intero portfolio
@@ -16,6 +15,7 @@ import './styles/main.scss';
 function App() {
   return(
   <Router>
+    <BackgroundGlow />
     <Routes>
       <Route path="/" element ={<Home />} />
     </Routes>

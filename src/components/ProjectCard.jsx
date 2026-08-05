@@ -58,34 +58,3 @@ function ProjectCard ({project}) {
 }
 
 export default ProjectCard;
-
-
-/* import PackBackLogo from '../assets/stack-icons/packback.png';
-import AIAgent from '../assets/projects-logo/AI-Agent.png';
-export const projects = [
-  {
-    id: "green-marketplace",
-    logo: PackBackLogo,
-    title: "PackBack",
-    bio: "Marketplace based on reusing shipping containers ",
-    tags: ["NodeJS", "React", "Typescript"],
-    demo: {
-      type: "live",
-      url: "https://packback-greengrocery.netlify.app/"
-    },
-    repoUrl: "https://github.com/NicolaRo/Progetto-finale/tree/main"
-  },
-  {
-    id: "AI-Agent",
-    logo: AIAgent,
-    title: "AI Agent",
-    bio: "AI personal assistant, handles schedules, appointment and mails",
-    tags: ["N8N", "Automation", "AI-Agent"],
-    demo: {
-      type: "youtube",
-      url: "https://youtu.be/HcReLqzooTM"
-    },
-    repoUrl: ""
-  }
-]; */
-

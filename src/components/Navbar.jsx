@@ -1,61 +1,83 @@
-//Importo useState per gestire lo stato aperto/chiuso del menu
-import {useState} from 'react';
+//Import useState to handle open/close state
+import { useState, useEffect } from "react";
 
-/* //importo il logo
-import logo from '../assets/images/home-img/Logo_Black-White.png'; */
+//Import items (the buttons) of the Navbar
+import { navigation } from "../data/navigationData";
 
-//Importo hook di React useNavigate per consentire al logo di navigare alla Home
-import {useNavigate} from 'react-router-dom';
+function Navbar() {
+  //STATE MANAEMENT
+  //Checks if the menu mobile is open or closed
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  //Checks which section is within the viewport to color the navbar corresponding button
+  const [activeSection, setActiveSection] = useState("");
 
-
-//Imposto la funzione in cui vive il componente
-function Navbar () {
-
-    //STATE MANAEMENT
-    //Questo state controlla se il menu mobile è aperto o chiuso
-    //Imposto lo state false=chiuso (default)
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    // Creola funzione navigate con hook useNavigate per consentire il routing del logo alla Home
-    const navigate = useNavigate ()
-
-    //Funzione per aprire/chiudere il menu quando clicco sul burger
-    //inverte lo stato da false (se chiudo di default) ad open e viceversa
-    const toggleMenu =() => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-    
-    const closeMenu = () => {
-        setIsMenuOpen(false);
-    }
-    //La funzione Navbar ritornerà quello che è il suo contenuto
-    return (
-        <header className="header">
-
-        {/*Inserisco il logo cliccabile che manderà alla Home se cliccato */ }
-            <img 
-                className="logo-img" 
-                src="/images/home-img/logoblackwhite.png"
-                alt="Logo Nico digital design" 
-                onClick={() => navigate ('/')}
-            />
-
-           {/*HAMBURGER ICON (solo mobile) */}
-<label
-  htmlFor="menu-btn"
-  className="menu-icon"
-  onClick={toggleMenu}
->
-  {/* FIX: aggiungi { prima del backtick */}
-  <span className={`nav-icon ${isMenuOpen ? 'active' : ''}`}></span>
-</label>
-
-{/*MENU NAVIGATION */}
-<nav className={`menu ${isMenuOpen ? 'menu-open': ''}`}>
-
-</nav>
-        </header>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+        (entries) =>{
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        },
+        { threshold: 0.5}
     );
+    navigation.forEach((item) => {
+        const section = document.getElementById(item.id);
+        if(section) observer.observe(section);
+    });
+    return () => observer.disconnect();
+  }, []);
+
+  console.log("Sezione attiva:", activeSection);
+
+  //Function to open/close the burger menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <header className="header">
+      <img
+        className="portfolio-logo"
+        src="/images/home-img/logoblackwhite.png"
+        alt="Logo Nico digital design"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      />
+
+      {/*HAMBURGER ICON (only mobile) */}
+      <label htmlFor="menu-btn" className="menu-icon" onClick={toggleMenu}>
+        <span className={`nav-icon ${isMenuOpen ? "active" : ""}`}></span>
+      </label>
+
+      {/*MENU NAVIGATION */}
+      <nav className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
+        {/*map generates from const navigation buttons in the navbar and set onClick smooth scroll to the section */}
+        <div className="navbar-buttons-container">
+          {navigation.map((item) => (
+            <button
+            className={`navbar-button ${activeSection === item.id ? "nav-active" : ""}`}
+              key={item.id}
+              onClick={() =>
+                document
+                  .getElementById(item.id)
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              {item.text}
+            </button>
+          ))}
+          
+        </div>
+        
+      </nav>
+    </header>
+  );
 }
 
 export default Navbar;

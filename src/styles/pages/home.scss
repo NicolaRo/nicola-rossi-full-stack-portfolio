@@ -1,4 +1,4 @@
-@use '../base/variables';
+@use '../base/variables' as *;
 @use '../base/mixins';
 
 .portfolio-bio{
@@ -16,9 +16,8 @@ align-items: center;
 }
 
 .profile-picture {
-    width: 25rem;
+    width: 10rem;
     height: auto;
-    margin: 2rem;
 }
 
 .bio-title{
@@ -26,10 +25,14 @@ align-items: center;
     align-items: center;
 }
 .bio-text{
+    width: 70%;
     display:flex;
     flex-direction: column;
     text-align: left;
     margin: 1rem;
+    border: solid 1px $blue-500;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .home-buttons-container{
