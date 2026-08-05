@@ -15,7 +15,7 @@ function ProjectCard ({project}) {
         {(project.tags || []).map((tag, index) => (
           <span 
             key={index} 
-            className="project-card-tag"
+            className="single-card-tag"
           >
             {tag}
           </span>

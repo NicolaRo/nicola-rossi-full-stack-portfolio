@@ -12,43 +12,6 @@ $space-md: 1rem;
 $space-lg: 2rem;
 $space-xl: 4rem;
 
-// PALETTE COLORI
-
-$color-background: #212121;
-$color-text: #a7a8a7;
-$border-red: rgba(187, 31, 31, 0.4);
-
-// Palette bottoni
-$button-text: #842132;
-$button-background: #a7a8a7;
-$button-hover: #313030;
-$box-shadow-red: 0 2px 2px 2px rgba(187, 31, 31, 0.4);
-$border-hover: 1px solid rgba(9, 9, 174, 0.82);
-$back-btn: #2473a9;
-
-//Colori tag
-$tag-colors: (
-  'HTML': #e34c26,
-  'CSS': #1572b6,
-  'JavaScript': #f7df1e,
-  'React': #61dafb,
-  'API': #00ffa6,
-  'Responsive': #38b2ac,
-  'Mobile-first': #805ad5,
-  'caching': #ed8936,
-  'Express':#029932,
-  'NodeJS':#ff7300cd,
-  'n8n': #cf0000,
-  'LLM': #881b00,
-  'OpenAI':#000000,
-);
-
-
-
-/* 
-====================================================== */
-
-
 /*-=-=-= SEMANTIC COLOR PALETTE =-=-=- */
 
 //## PRIMITIVES 
@@ -65,15 +28,16 @@ $color-border-subtle: rgba($gray-100, 0.1); // container border light
 /*-=-=-= ELEVATION HIERARCHY =-=-=- */
 $shadow-sm: 1px 1px 15px 1px rgba(0, 0, 0, 0.15);
 $shadow-md: 1px 1px 30px 2px rgba(0, 0, 0, 0.3);
-/* $shadow-glow: 1px 1px 15px 2px rgba(2, 247, 137, 0.4); */
 $shadow-skeleton: 1px 1px 10px 1px rgba(35, 143, 129, 0.235), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
 
 /*-=-=-= RADIUS =-=-=- */
-$glass-background: rgba(0, 0, 0, 0.15);
 
 $radius-xl: 4rem;
 $radius-lg: 3rem;
 $radius-md: 2rem;
 $radius-sm: 1rem;
 $rounded-radius: 50%;
+
+/*-=-=-=- GLOW -=-=-=-*/
+$box-shadow: 1px 1px 10px 2px #70b4e187;
 

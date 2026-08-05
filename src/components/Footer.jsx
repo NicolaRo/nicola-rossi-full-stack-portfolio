@@ -6,12 +6,6 @@ import {Link} from 'react-router-dom';
 function Footer () {
     return (
         <footer className="footer">
-            {/*Link di navigazione */}
-            <div className="footer-btn">
-                <Link to="/">Home</Link>
-                <Link to="/cv">CV</Link>
-                <Link to="/contact">Contact Me</Link>
-            </div>
             <div className="footer-social-icon">
                 <a className="footer-a-social"
                     href="https://github.com/NicolaRo" 
