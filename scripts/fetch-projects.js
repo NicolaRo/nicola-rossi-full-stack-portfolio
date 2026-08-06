@@ -27,7 +27,7 @@ async function main() {
         {
             headers:{
             Authorization: `Bearer ${GITHUB_TOKEN}`,
-            Accept:"Application/vnd.github+json",
+            Accept:"application/vnd.github+json",
             },
         }
     );
@@ -49,4 +49,7 @@ async function main() {
     const fileContent = `export const projects = ${JSON.stringify(projects, null, 2)};\n`;
     writeFileSync("src/data/projectData.js", fileContent);
 }
-main();
+main().then(() => process.exit(0)).catch((err) => {
+    console.error(err);
+    process.exit(1);
+});
