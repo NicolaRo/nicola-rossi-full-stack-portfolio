@@ -51,16 +51,17 @@ function Contact() {
 
   return (
     <>
-      <h1 className="contact-title">Contact Me</h1>
+      
       <div className="container-form">
+      <h1 className="text-h1">Contact Me</h1>
         <div className="form-text">
-          <p>
+          <p className="text-body">
             Fill out the form below to send me a message. I will get back to you
             as soon as possible.
           </p>
           <form id="contact-form" onSubmit={handleSubmit}>
             <div className="field">
-              <label htmlFor="name">Name</label>
+              <label className="text-label" htmlFor="name">Name</label>
               <input
                 type="text"
                 name="name"
@@ -72,7 +73,7 @@ function Contact() {
             </div>
 
             <div className="field">
-              <label htmlFor="email">Email</label>
+              <label className="text-label" htmlFor="email">Email</label>
               <input
                 type="email"
                 name="email"
@@ -83,7 +84,7 @@ function Contact() {
             </div>
 
             <div className="field">
-              <label htmlFor="message">Message</label>
+              <label className="text-label" htmlFor="message">Message</label>
               <textarea
                 name="message"
                 id="message"
@@ -94,7 +95,7 @@ function Contact() {
             </div>
 
             <div className="submit-btn-container">
-              <button type="submit" disabled={formStatus === "sending"}>
+              <button className="send-msg-btn" type="submit" disabled={formStatus === "sending"}>
                 {formStatus === "sending"
                   ? "Sending message..."
                   : "Send message"}
@@ -102,7 +103,7 @@ function Contact() {
               {/* <button type="submit">Send message</button> */}
             </div>
           </form>
-          <p>Or for a quicker response...</p>
+          <p className="text-body">Or for a quicker response...</p>
           <div className="whatsapp-btn-container">
             <a
               className="whatsapp-btn"

@@ -15,13 +15,21 @@ $space-xl: 4rem;
 /*-=-=-= SEMANTIC COLOR PALETTE =-=-=- */
 
 //## PRIMITIVES 
-$gray-900: #212121; //-> dark gray for background
+
 $gray-100: #E5E5E5;  // -> light gray for texts
+$gray-300:rgb(148, 147, 147)5;  // -> mid gray for labels
+$gray-500: #ffffff14; // -> light transparency for navbar
+$gray-700: #00000026; // -> darker transparency for containers
+$gray-900: #212121; //-> dark gray for background
 $blue-500:#70B4E1; //-> light blue as the accent color
+
 
 //## SEMANTIC -> Colors that communicates success failure or warnings
 $color-error: #FF8A8A; //-> buttons close/remove
 $color-text: $gray-100;
+$text-label: $gray-300;
+$light-transparency: $gray-500;
+$dark-transparency: $gray-700;
 $color-background: $gray-900;
 $color-border-subtle: rgba($gray-100, 0.1); // container border light
 
@@ -40,4 +48,5 @@ $rounded-radius: 50%;
 
 /*-=-=-=- GLOW -=-=-=-*/
 $box-shadow: 1px 1px 10px 2px #70b4e187;
+$icon-glow: 0 0 20px 10px rgba($blue-500, 0.4);
 

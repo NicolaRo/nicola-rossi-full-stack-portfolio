@@ -1,17 +1,18 @@
 @use "../base/variables" as *;
-@use "../base/mixins" as m;
+@use "../base/mixins" as *;
+@use '../base/tipograpy' as*;
 @use "../base/global";
 @use "../components/buttons";
 
 .contact-title {
-  margin-top: 8rem;
+
 }
 
 .contact-page{
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    @include m.respond (md) {
+    @include respond (md) {
       flex-direction: row;
   }
 }
@@ -35,43 +36,45 @@ p{
   height: auto;
   border-radius: 5px;
   box-shadow: $box-shadow;
-  @include m.respond (sm){
+  @include respond (sm){
     flex-direction: column;
   }
 }
 
 .container-form {
 display: flex;
-text-align: left;
 flex-direction: column;
-padding: 0.25rem;
-border-radius: 8px;
-margin: 2rem;
+justify-content: center;
+padding: $space-sm;
+border-radius: $radius-sm;
+margin: $space-xl 0;
+min-height: 100vh;
+max-width: 100vw;
 }
-  @media screen and (max-width: 400px) {
-    .wrap-form-container {
-      width: 100%;
-      margin-left: 0;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #68666661;
-      box-shadow: $box-shadow;
-      border-radius: 5px;
-      margin: 0 auto;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-  }
   .form-text {
+    text-align: left;
     display: flex;
     flex-direction: column;
     padding:1rem;
-    border-radius: 8px;
+    border-radius: $radius-sm;
     width: auto;
     border: solid 1px $color-border-subtle;
+  }
+  
+  #name, #email, #message {
+    color:$color-text;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.65rem;
+  }
+
+  #name, #email{
+    min-height: $space-xl;
+    background-color: $dark-transparency;
+  }
+
+  #message{
+    min-height: 10rem;
+    background-color: $dark-transparency;
   }
   
   .field {
@@ -92,20 +95,21 @@ background-color: transparent;
 }
   
 .field input {
-  background-color: transparent;
+background-color: transparent;
 display: block;
 min-width: 90%;
-line-height: 1.5;
-font-size: 14px;
+line-height: $line-height-tight;
+font-size: $space-xs;
 border: solid 2px $color-border-subtle;
-border-radius: 8px;
+border-radius: $radius-sm;
 width: 95%;
-height: 2.5rem;
-padding: 0.25rem;
+height: $space-lg;
+padding: $space-xs;
+color: $text-label;
 }
 
 #message {
-  background-color: transparent;
+background-color: transparent;
 min-width: 95%;
 border-radius: $radius-sm;
 border: solid 2px $color-border-subtle;

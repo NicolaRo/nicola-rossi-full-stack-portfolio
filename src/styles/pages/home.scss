@@ -1,5 +1,6 @@
 @use '../base/variables' as *;
-@use '../base/mixins';
+@use '../base/tipograpy' as *;
+@use '../base/mixins' as *;
 
 .portfolio-bio{
 margin-top:10rem;
@@ -8,33 +9,92 @@ flex-direction: column;
 justify-content: space-evenly;
 height: fit-content;
 align-items: center;
-
-   /*  @include mixins.respond (md) { // larghezza minima (≥768px)
-        display:flex;
-        flex-direction: row;
-    } */
 }
 
 .profile-picture {
     width: 10rem;
     height: auto;
+    margin: $space-xl 0;
 }
 
+#about{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 .bio-title{
     margin: 2rem;
     align-items: center;
 }
 .bio-text{
     width: 70%;
+    height: fit-content;
     display:flex;
+    gap:$space-lg;
     flex-direction: column;
     text-align: left;
-    margin: 1rem;
+    margin: $space-xl 0;
     border: solid 1px $color-border-subtle;
-    padding: 2rem;
-    border-radius: 1rem;
+    padding: $space-lg;
+    border-radius: $radius-sm;
+    background-color: $dark-transparency;
+    &:hover{
+        box-shadow: $box-shadow;
+    }
 }
 
+.stacks-container{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat (3, 2fr); 
+}
+.tools-grid{
+    min-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: $space-lg 0;
+}
+
+.stack-item{
+    &:hover {
+        
+        .language-icon {
+            transform: translateY(-$space-md);
+            box-shadow: $box-shadow;
+        }
+        .visible-stack-name {
+            display: block;
+            font-family: 'Outfit', sans-serif;
+            font-size: $text-label;
+        }
+    }
+}
+
+.visible-stack-name{
+    display: none;
+}
+
+
+.language-icon{
+    transition: transform 0.2s;
+    width: $space-xl;
+    height: $space-xl;
+    margin: $space-xs;
+    background-color: transparent;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    @include respond(md){
+        display: grid;
+        grid-template-columns: repeat (4, fr2);
+    }
+    
+}
 .home-buttons-container{
     display: flex;
     flex-direction: row;

@@ -43,39 +43,39 @@ function Navbar() {
 
   return (
     <header className="header">
+      
+      <div className="navigation-container">
       <img
         className="portfolio-logo"
         src="/images/home-img/logoblackwhite.png"
         alt="Logo Nico digital design"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       />
-
-      {/*HAMBURGER ICON (only mobile) */}
+        {/*HAMBURGER ICON (only mobile) */}
       <label htmlFor="menu-btn" className="menu-icon" onClick={toggleMenu}>
         <span className={`nav-icon ${isMenuOpen ? "active" : ""}`}></span>
       </label>
 
       {/*MENU NAVIGATION */}
-      <nav className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
-        {/*map generates from const navigation buttons in the navbar and set onClick smooth scroll to the section */}
-        <div className="navbar-buttons-container">
-          {navigation.map((item) => (
-            <button
-            className={`navbar-button ${activeSection === item.id ? "nav-active" : ""}`}
-              key={item.id}
-              onClick={() =>
-                document
-                  .getElementById(item.id)
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              {item.text}
-            </button>
-          ))}
-          
-        </div>
-        
-      </nav>
+        <nav className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
+          {/*map generates from const navigation buttons in the navbar and set onClick smooth scroll to the section */}
+          <div className="navbar-buttons-container">
+            {navigation.map((item) => (
+              <button
+              className={`navbar-button ${activeSection === item.id ? "nav-active" : ""}`}
+                key={item.id}
+                onClick={() =>
+                  document
+                    .getElementById(item.id)
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                {item.text}
+              </button>
+            ))}
+          </div>
+        </nav>
+      </div>
     </header>
   );
 }

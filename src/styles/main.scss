@@ -1,21 +1,21 @@
-//Importo i files di stile di base
-@use './base/global';
-@use './base/mixins';
-@use './base/variables';
-@use './components/buttons';
 
-//Importo i files di stile dei componenti
+@use './base/global' as *;
+@use './base/mixins' as *;
+@use './base/variables' as *;
+@use './components/buttons';
+@use './base/tipograpy' as * ;
+
+
 @use './components/footer';
 @use './components/navbar';
 @use './components/project-card';
 @use './components/backround-glow';
 
-//Importo i files di stile delle pagine
+
 @use './pages/home';
 @use './pages/contact';
 
 * {
-font-family: 'Montserrat', sans-serif;
 text-decoration: none;
 list-style: none;
 
@@ -23,6 +23,6 @@ list-style: none;
 
 
 body {
-    background-color: variables.$color-background;
-    color: variables.$color-text;
+    background-color: $color-background;
+    color: $color-text;
   }

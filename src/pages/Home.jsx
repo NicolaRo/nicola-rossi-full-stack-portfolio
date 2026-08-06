@@ -23,16 +23,15 @@ function Home () {
         <Navbar/>
 
         <section className="title-container">
-            
-            <div className="title-subtitle-pp">
-                <h1 className="text-h1">Nicola Rossi</h1>
-                <h2 className="text-h2">Full Stack Developer</h2>
-                <img
-                    className="profile-picture" 
-                    src={ProfilePicture} 
-                    alt="Nicola's picture black & white"
-                />
-            </div>
+            <img
+                        className="profile-picture" 
+                        src={ProfilePicture} 
+                        alt="Nicola's picture black & white"
+                    />
+                <div className="title-subtitle-pp">
+                    <h1 className="text-h1">Nicola Rossi</h1>
+                    <h2 className="text-h2">Full Stack Developer</h2>
+                </div>
         
         </section>
             
@@ -40,11 +39,13 @@ function Home () {
             id="about"
             ref={aboutRef}
             className={`fade-in-section} ${aboutVisible ? 'is-visible' : ''}`} >
+    
                 <div className="bio-text">
-                    <p>I develop digital products designed to solve real-world problems through thoughtful engineering.</p>
-                    <p>From AI-driven assistants and autonomous workflows to scalable full stack applications, I focus on creating software that is intuitive, maintainable, and built with purpose.</p>
-                    <p>Every project is an opportunity to refine, improve, and deliver lasting value.</p>
-                    <p>Every release is a foundation for the next.</p>
+                <h2 className="text-h2">About Me</h2>
+                    <p className="text-body">I develop digital products designed to solve real-world problems through thoughtful engineering.</p>
+                    <p className="text-body">From AI-driven assistants and autonomous workflows to scalable full stack applications, I focus on creating software that is intuitive, maintainable, and built with purpose.</p>
+                    <p className="text-body">Every project is an opportunity to refine, improve, and deliver lasting value.</p>
+                    <p className="text-body">Every release is a foundation for the next.</p>
                 </div>
 
         </section>
@@ -60,7 +61,11 @@ function Home () {
             id="projects"
             ref={projectsRef}
             className={`fade-in-section} ${projectsVisible ? 'is-visible' : ''}`} >
-                <div className="project-cards">
+                <h2 className="text-h2">
+                        My Projects
+                    </h2>
+                <div className="container-project-cards">
+
                     {projects.map((project) => (
                         <ProjectCard 
                             key={project.id} 
@@ -68,6 +73,7 @@ function Home () {
                         />
                     ))}
                 </div>
+                
         </section>
         
         <section 

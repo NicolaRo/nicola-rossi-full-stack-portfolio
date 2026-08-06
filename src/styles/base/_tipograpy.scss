@@ -24,13 +24,13 @@
   $font-size-3xl:  fluid(30, 38);   // H1 — titolo di pagina
   
   // Weights e line-height don't change depending on the viewport
-  $font-weight-regular:  400;
-  $font-weight-semibold: 600;
-  $font-weight-bold:     700;
+  $font-weight-regular:  300;
+  $font-weight-semibold: 400;
+  $font-weight-bold:     600;
   
   
   strong, b {
-    font-weight: inherit; // non forza più 700, eredita dal genitore/token
+    font-weight: inherit;
   }
   
   $line-height-heading: 1.2;
@@ -42,14 +42,23 @@
 // applied together with layout settings
 
 .text-h1 {
+    font-family: 'Outfit', 'sans-serif';
     font-size: $font-size-3xl;
     font-weight: $font-weight-bold;
     line-height: $line-height-heading;
+    letter-spacing: $space-xs;
   }
   
   .text-h2 {
+    font-family: 'Outfit', 'sans-serif';
     font-size: $font-size-xl;
     font-weight: $font-weight-semibold;
+    line-height: $line-height-heading;
+  }
+  .text-h3 {
+    font-family: 'Outfit', 'sans-serif';
+    font-size: $font-size-xl;
+    font-weight: $font-weight-regular;
     line-height: $line-height-heading;
   }
   
@@ -61,21 +70,27 @@
   }
   
   .text-label {
+    font-family: 'Outfit', sans-serif;
     font-size: $font-size-sm;
     font-weight: $font-weight-regular;
     line-height: $line-height-tight;
   }
   
   .text-body {
+    font-family: 'Quicksand', sans-serif;
     font-size: $font-size-md;
     font-weight: $font-weight-regular;
     line-height: $line-height-body;
   }
   
-  .text-utility {
+  .text-tag {
+    font-family: 'Outfit', sans-serif;
+    color: $blue-500;
     font-size: $font-size-xs;
     font-weight: $font-weight-regular;
     line-height: $line-height-tight;
+    display:flex;
+    align-items:center;
   }
   .text-card-title {
     font-size: $font-size-lg;
@@ -86,9 +101,4 @@
   .text-emphasis {
     color: $color-text;
     font-weight: $font-weight-regular;
-  }
-
-  .text-emphasis--strong {
-    color: $black;
-    font-weight: $font-weight-semibold;
   }

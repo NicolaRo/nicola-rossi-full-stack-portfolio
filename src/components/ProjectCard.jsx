@@ -2,29 +2,32 @@
 function ProjectCard ({project}) {
   
   return (
+    
+    <>
     <div className="project-card">
       <img 
         className="project-card-logo"
         src={`/logos/${project.logo}`}
         alt={`${project.title} logo`}
       />
-      <h3 className="project-card-title">
+      <h3 className="text-h3">
         {project.title}
       </h3>
       <div className="project-card-tags">
         {(project.tags || []).map((tag, index) => (
-          <span 
+          <p 
             key={index} 
-            className="single-card-tag"
+            className="text-tag"
           >
             {tag}
-          </span>
+          </p>
         ))}
       </div>
-      <p className="project-card-description">
+      <p className="text-body">
         {project.bio}
       </p>
       {/*Button to the repository*/}
+      <div className="card-btn-container">
       {project.repoUrl ? (
         <a
           href={project.repoUrl}
@@ -33,9 +36,9 @@ function ProjectCard ({project}) {
           className="project-card-button"
         >GitHub</a>
       ) : (
-        <span className="project-card-button project-card-button--disabled">
+        <p className="project-card-button project-card-button--disabled">
           GitHub
-        </span>
+        </p>
       )}
 
       {/*Demo button*/}
@@ -53,8 +56,15 @@ function ProjectCard ({project}) {
           Demo
         </span>
       )}
+      </div>
+      
     </div>
+    </>
+    
   );
+  
 }
+   
+    
 
 export default ProjectCard;

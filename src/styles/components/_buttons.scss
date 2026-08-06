@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use '../base/tipograpy' as *;
 @use "../base/mixins";
 
 // GLOBAL
@@ -11,6 +12,7 @@ button {
 }
 
 .project-card-button{
+ 
   color: $color-text;
   margin: $space-sm;
   padding: $space-sm;
@@ -23,24 +25,29 @@ button {
   justify-content: flex-end;
 }
 
-.whatsapp-btn-container {
+.whatsapp-btn-container,.send-msg-btn {
   min-height: fit-content;
   width: fit-content;
   background-color: transparent;
 }
 
-.whatsapp-btn {
+.whatsapp-btn, .send-msg-btn {
+  font-family: 'Outfit', sans-serif;
   min-height: fit-content;
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: transparent;
-  color: $blue-500;
+  margin: $space-sm;
+  padding: $space-sm;
+  color: $color-text;
   display: flex;
   width: fit-content;
   align-items: center;
   border-radius: $radius-sm;
   border: solid 2px $color-border-subtle;
-  font-weight: bold;
+  font-weight: $font-weight-semibold;
+  &:Hover{
+    box-shadow: $box-shadow;
+    border: 1px solid $blue-500;
+    color: $blue-500;
+  }
 }
 
 .logo-whatsapp {

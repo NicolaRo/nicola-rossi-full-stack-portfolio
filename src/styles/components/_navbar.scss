@@ -1,9 +1,10 @@
 @use '../base/variables' as *;
-@use '../base/mixins';
+@use '../base/mixins'as *;
 
 
 .header{
-    background-color: transparent;
+    background-color: $light-transparency;
+    position:relative;
     backdrop-filter: blur(2px);
     position: sticky;
     z-index: 100;
@@ -11,13 +12,21 @@
     left:0;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    max-width: 100vw;
+    @include respond (md) {
+        flex-direction: row;
+    }
 }
 
 .navbar-buttons-container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     width: 80vw;
+    @include respond (md) {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .navbar-button{
@@ -31,11 +40,11 @@
 }
 
 .portfolio-logo{
-    width: 6rem;
+    width: 4rem;
     height: auto;
-    float:left; //Posizionamento a sinistra
-    padding:$space-md;
-    margin-top: $space-md;
+    float:left;
+    padding:$space-sm;
+    margin-top: $space-sm;
     background-color: transparent;
     cursor: pointer;
 }
@@ -96,10 +105,9 @@ ul button {
 
 .menu-icon{
     padding: $space-lg;
-    position:relative;//Per contenere il nav-icon absolute
+    position:relative;
     float: right;
     cursor:pointer;
-    background-color:#050505;
 }
 .nav-icon{
     background-color: $color-text;
@@ -168,7 +176,7 @@ ul button {
 }
 
 .menu-icon{
-    display: none; //Nascondo il burger menu su desktop
+    display: none;
 }
 }
 
