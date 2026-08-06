@@ -21,7 +21,9 @@ function Navbar() {
                 }
             });
         },
-        { threshold: 0.5}
+        { threshold: 0,
+          rootMargin: "-40% 0px -40% 0px"
+        }
     );
     navigation.forEach((item) => {
         const section = document.getElementById(item.id);

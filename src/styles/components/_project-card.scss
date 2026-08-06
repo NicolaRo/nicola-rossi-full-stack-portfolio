@@ -1,6 +1,7 @@
 // _project-card.scss
 @use '../base/variables' as *;
 @use '../base/mixins'as *;
+@use '../base/tipograpy' as *;
 
 #projects{
   display: flex;
@@ -11,12 +12,9 @@
 }
 
 .container-project-cards{
-
   display: flex;
   flex-direction: column;
-  max-width: 50vw;
-  
-  
+
   @include respond (md) {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
@@ -31,7 +29,6 @@
   padding: $space-md;
   height: fit-content;
   background-color: $dark-transparency;
-  max-width: 100vw;
   text-align: left;
   &:Hover{
     box-shadow: $box-shadow;
@@ -50,8 +47,24 @@
   width: 4rem;
   background-color: transparent;
   padding:$space-sm;
-  margin: 0;
-  justify-self: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-card-logo-placeholder {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: $dark-transparency;
+  filter: drop-shadow(0 0 10px $blue-500);
+  color: $blue-500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $space-lg;
+  font-family: 'Outfit', sans-serif;
+  font-weight: $font-weight-semibold;
+  margin: 0 auto;
 }
 
 // Container dei tag

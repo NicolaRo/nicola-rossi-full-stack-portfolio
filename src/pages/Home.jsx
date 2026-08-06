@@ -10,7 +10,7 @@ import {projects} from '../data/projectData.js';
 import useFadeInOnScroll from '../hooks/useFaInOnScroll.js';
 
 //Import profile picture
-import ProfilePicture from '../assets/fotoprofilo.png';
+import ProfilePicture from '../assets/fotoportfolio-interaBW.png';
 
 
 function Home () {

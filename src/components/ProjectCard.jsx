@@ -5,11 +5,18 @@ function ProjectCard ({project}) {
     
     <>
     <div className="project-card">
-      <img 
+      {project.logo ? (
+        <img 
         className="project-card-logo"
         src={`/logos/${project.logo}`}
         alt={`${project.title} logo`}
       />
+    ) : (
+        <div className="project-card-logo-placeholder">
+          {project.title.charAt(0)}
+        </div>
+      )}
+      
       <h3 className="text-h3">
         {project.title}
       </h3>
