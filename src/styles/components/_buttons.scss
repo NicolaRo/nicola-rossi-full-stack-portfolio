@@ -18,6 +18,17 @@ button {
   padding: $space-sm;
   border-radius: $radius-sm;
   border: solid 1px $color-border-subtle;
+  font-family: 'Outfit', sans-serif;
+  &:Hover{
+    box-shadow: $box-shadow;
+    color:$blue-500;
+  }
+}
+
+.project-card-button--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 .submit-btn-container{

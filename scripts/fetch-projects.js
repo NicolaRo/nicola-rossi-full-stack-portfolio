@@ -42,10 +42,13 @@ async function main() {
                 id: repo.name,
                 bio: repo.description,
                 repoUrl: repo.html_url,
+                createdAt: repo.created_at,
                 ...jsonData,
             };
         })
     );
+    projects.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
     const fileContent = `export const projects = ${JSON.stringify(projects, null, 2)};\n`;
     writeFileSync("src/data/projectData.js", fileContent);
 }
