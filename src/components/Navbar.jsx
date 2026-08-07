@@ -49,7 +49,7 @@ function Navbar() {
       <div className="navigation-container">
       <img
         className="portfolio-logo"
-        src="/images/home-img/logoblackwhite.png"
+        src="/images/navbar-img/logoblackwhite.png"
         alt="Logo Nico digital design"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       />
