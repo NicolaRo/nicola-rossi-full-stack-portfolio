@@ -3,7 +3,7 @@
 @use '../base/mixins' as *;
 
 .title-container{
-    min-height: 100vh;
+    min-height: fit-content;
 }
 
 .portfolio-bio{
