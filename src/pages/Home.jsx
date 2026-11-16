@@ -23,11 +23,11 @@ function Home () {
         <Navbar/>
 
         <section className="title-container">
-            <img
+           {/*  <img
                         className="profile-picture" 
                         src={ProfilePicture} 
                         alt="Nicola's picture black & white"
-                    />
+                    /> */}
                 <div className="title-subtitle-pp">
                     <h1 className="text-h1">Nicola Rossi</h1>
                     <h2 className="text-h2">Full Stack Developer</h2>
