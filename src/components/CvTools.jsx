@@ -12,6 +12,7 @@ import GitIcon from '../assets/stack-icons/git.png';
 import ViteIcon from '../assets/stack-icons/vite.png';
 import SassIcon  from '../assets/stack-icons/sass.png';
 import N8nIcon from '../assets/stack-icons/n8n.png';
+import SwiftIcon from '../assets/stack-icons/swift.png';
 
 function CvTools () {
     return (
@@ -136,6 +137,13 @@ function CvTools () {
                         alt ="Wordpress logo"
                     />
                     <p className="visible-stack-name">Wordpress</p>
+                </div><div className="stack-item">
+                    <img 
+                        className="language-icon" 
+                        src={SwiftIcon}
+                        alt="Swift-logo"
+                    />
+                    <p className="visible-stack-name">Swift</p>
                 </div>
             </div>
         </div>
