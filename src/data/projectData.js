@@ -128,4 +128,20 @@ export const projects = [
     },
     "logo": "countertop.png"
   }
+  {
+    "id": "PRIMO",
+    "bio": "Swift-based AI application that provides emotional and emphatetic offline support to users. Primo is a digital companion that will support not replace the user, developed with the 'man-in-the-loop' design it will demand for user's interacion also in the data management.",
+    "repoUrl": "https://github.com/NicolaRo/Primo",
+    "createdAt": "2025-07-08T07:47:10Z",
+    "title": "Primo",
+    "tags": [
+      "Swift",
+      "SwiftUI"
+    ],
+    "demo": {
+      "type": "youtube",
+      "url": null
+    },
+    "logo": "primo.png"
+  }
 ];
